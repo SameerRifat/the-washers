@@ -31,7 +31,7 @@ const services = [
         title: 'Leather Sofa Cleaning',
     },
     {
-        imgSrc: '/fabricSofa.jpg',
+        imgSrc: '/sofaCumBed.jpg',
         title: 'Sofa Cum Bed Clean',
     },
 ]
@@ -49,7 +49,7 @@ const Services = () => {
     return (
         <div className='w-[93%] sm:w-[90%] mx-auto my-20 max-w-[1600px]'>
 
-            <div>
+            <div className='mb-20'>
                 <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Service Company</h2>
                 <p>The Washers, is a professional housekeeping company doing cleaning services all over UAE.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
@@ -110,7 +110,7 @@ const Services = () => {
                                 <div>
                                     <h4 className='font-semibold text-xl'>{service.title}</h4>
                                     <ul className='list-disc pl-5'>
-                                        <li>Dry vacuuming to remove crumbs & dirt particles</li>
+                                        <li className='mb-1'>Dry vacuuming to remove crumbs & dirt particles</li>
                                         <li>Wet shampooing & vacuuming to treat tough stains and spillages</li>
                                     </ul>
                                 </div>

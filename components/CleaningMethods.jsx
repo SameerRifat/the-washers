@@ -22,7 +22,7 @@ const methods = [
 
 const CleaningMethods = () => {
     return (
-        <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-40 py-10'>
+        <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-10'>
             <div className='w-[90%] mx-auto'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl'>
                     <span className='font-semibold'>Professional {" "}</span>
@@ -34,7 +34,7 @@ const CleaningMethods = () => {
                 <div className='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-12'>
                     {methods.map((method, ind) => {
                         return (
-                            <div className='flex items-center gap-5'>
+                            <div key={ind} className='flex items-center gap-5'>
                                 <div className='bg-white p-3 xs:p-4 rounded-lg shadow-sm'>
                                     <AutorenewIcon className='w-12 h-12 text-green-500' />
                                 </div>

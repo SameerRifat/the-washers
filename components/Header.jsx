@@ -10,6 +10,7 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import UpdateOutlinedIcon from '@mui/icons-material/UpdateOutlined';
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Dialog } from '@headlessui/react';
 
@@ -24,26 +25,32 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <nav className="absolute top-0 left-0 w-full py-4 flex z-50">
-                <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between items-center'>
-                    <div>
+            <nav className="absolute top-0 left-0 w-full h-[70px] flex z-50">
+                <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between'>
+                    <div className=' flex items-center'>
                         <Link href='/'>
                             {/* <Image src="/logo.png" alt="Logo" width={100} height={50} /> */}
-                            <h2 className='font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
+                            <h2 className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
                         </Link>
                     </div>
-                    <div className="hidden md:flex space-x-10 text-base font-semibold">
-                        {navigation.map((navLink) => {
-                            return (
-                                <Link
-                                    key={navLink.name}
-                                    href={navLink.href}
-                                    className='text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
-                                >
-                                    {navLink.name}
-                                </Link>
-                            )
-                        })}
+                    <div className="hidden md:flex  ">
+                        <div className='space-x-10 text-base font-semibold flex items-center'>
+                            {navigation.map((navLink) => {
+                                return (
+                                    <Link
+                                        key={navLink.name}
+                                        href={navLink.href}
+                                        className='text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
+                                    >
+                                        {navLink.name}
+                                    </Link>
+                                )
+                            })}
+                        </div>
+                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-4 rounded-br-3xl rounded-bl-3xl'>
+                            <LocalPhoneOutlinedIcon className='text-white'/>
+                            <span className='text-white text-lg font-extrabold'>800 939</span>
+                        </div>
                     </div>
                     <button onClick={() => setOpen(true)} className='md:hidden text-white'>
                         <MenuOutlinedIcon />
@@ -167,7 +174,7 @@ const Header = () => {
             <div className='flex flex-col lg:flex-row bg-gradient-to-r lg:bg-none from-blue-500 to-green-400'>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-blue-500 lg:to-green-400 lg:flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
                     <div className='text-4xl'>
-                        <UpdateOutlinedIcon className='w-12 h-12 text-white'/>
+                        <UpdateOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-white font-semibold text-xl'>23 / 7 Booking</h3>
