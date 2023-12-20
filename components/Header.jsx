@@ -136,7 +136,8 @@ const Header = () => {
         autoplay: true,
         autoplaySpeed: 5000,
         cssEase: "linear",
-        // speed: 1000
+        // speed: 1000,
+        pauseOnHover: false
     };
 
     const slides = [
