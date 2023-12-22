@@ -19,7 +19,7 @@ const contactInfo = [
     {
         icon: LocalPhoneOutlinedIcon,
         title: 'Call',
-        subTitle: '800 939'
+        subTitle: '+971 55 792 4200'
     },
     {
         icon: EmailOutlinedIcon,

@@ -26,7 +26,7 @@ const Footer = () => {
                             <div className='flex flex-col gap-1'>
                                 <h3 className='font-semibold text-lg'>Head Office</h3>
                                 <span className='text-sm'>P.o.Box:8893</span>
-                                <span className='text-sm'>Abu Dhani, UAE</span>
+                                <span className='text-sm'>Abu Dhabi, UAE</span>
                             </div>
                         </div>
                         <div className='flex gap-2 pb-3'>

@@ -9,16 +9,16 @@ import SectionHeading from './SectionHeading';
 
 const slides = [
     {
-        image: "/service1.jpeg",
+        image: "/sofa1.jpg",
     },
     {
-        image: "/service2.jpeg",
+        image: "/sofa3.jpg",
     },
     {
-        image: "/service3.jpeg",
+        image: "/sofa5.jpg",
     },
     {
-        image: "/service4.jpeg",
+        image: "/b1.jpg",
     }
 ];
 
@@ -38,10 +38,6 @@ const slides = [
 // ]
 const services = [
     {
-        imgSrc: '/fabricSofa.jpg',
-        title: 'Sofa Clean',
-    },
-    {
         imgSrc: '/mattress1.jpg',
         title: 'Mattress Cleaning',
     },
@@ -54,7 +50,7 @@ const services = [
         title: 'Rugs Cleaning',
     },
     {
-        imgSrc: '/curtains3.jpg',
+        imgSrc: '/curtains1.jpg',
         title: 'Curtains Cleaning',
     },
     {
@@ -66,8 +62,12 @@ const services = [
         title: 'Glass Cleaning',
     },
     {
-        imgSrc: '/deepClean.jpg',
+        imgSrc: '/deep.jpg',
         title: 'Deep Cleaning',
+    },
+    {
+        imgSrc: '/sofa6.jpg',
+        title: 'Sofa Clean',
     },
 ]
 
@@ -161,7 +161,7 @@ const Services = () => {
                                         height={350}
                                         quality={95}
                                         priority={true}
-                                        className='max-w-full w-full h-full sm:h-[350px] rounded-lg'
+                                        className='max-w-full w-full h-full sm:h-[350px] rounded-lg shadow-sm'
                                     />
                                 )
                             })}
