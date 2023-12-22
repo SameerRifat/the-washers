@@ -22,7 +22,7 @@ const SlideContent = ({ image, title }) => (
             className='max-w-full w-full h-full'
         />
         <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40'>
-            <div className='ml-5 xs:ml-8 sm:ml-14 lg:ml-20 mb-5 sm:mb-20'>
+            <div className='ml-5 xs:ml-8 sm:ml-14 lg:ml-20 mb-4 sm:mb-20'>
                 <h1 className='font-bold xs:font-extrabold text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-2 xs:gap-3 sm:gap-4 mb-5'>
                     {title.map((text, index) => (
                         <span key={index}>{text}</span>
