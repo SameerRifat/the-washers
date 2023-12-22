@@ -50,7 +50,7 @@ const Contact = () => {
                     </span>
                 </div> */}
                 <div className='flex justify-between xs:grid xs:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
-                    <div className='flex justify-start lg:justify-center items-center border-2 border-red-500'>
+                    <div className='flex justify-start lg:justify-center items-center'>
                         <div className='w-[150px] xs:w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-fit lg:h-[175px]'>
                             <video
                                 width="100%"
@@ -67,7 +67,7 @@ const Contact = () => {
                             </video>
                         </div>
                     </div>
-                    <div className='flex-1 flex justify-end lg:justify-center items-center relative overflow-hidden border-4 border-red-500'>
+                    <div className='flex-1 flex justify-end lg:justify-center items-center relative overflow-hidden'>
                         <Image
                             src='/contact-us1.png'
                             alt="banner"
