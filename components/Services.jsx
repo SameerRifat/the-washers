@@ -93,7 +93,7 @@ const Services = () => {
     // };
     var settings2 = {
         dots: true,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         // speed: 500,
         slidesToShow: 3,

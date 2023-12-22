@@ -11,7 +11,7 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[40vh] xs:h-[60vh] md:h-[95vh] relative'>
+    <div className='w-full h-[40vh] xxs:h-[45vh] xs:h-[60vh] md:h-[70vh] lg:h-[95vh] relative'>
         <Image
             src={image}
             alt="banner"
@@ -22,7 +22,7 @@ const SlideContent = ({ image, title }) => (
             className='max-w-full w-full h-full'
         />
         <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40'>
-            <div className='ml-5 xs:ml-8 sm:ml-14 lg:ml-20 mb-10 xs:mb-20'>
+            <div className='ml-5 xs:ml-8 sm:ml-14 lg:ml-20 mb-5 sm:mb-20'>
                 <h1 className='font-bold xs:font-extrabold text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-2 xs:gap-3 sm:gap-4 mb-5'>
                     {title.map((text, index) => (
                         <span key={index}>{text}</span>
@@ -92,7 +92,7 @@ const Header = () => {
                         <UpdateOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>23 / 7 Booking</h3>
+                        <h3 className='text-white font-semibold text-xl'>24 / 7 Booking</h3>
                         <p className='text-white'>Book our service online 24/7 available</p>
                     </div>
                 </div>
