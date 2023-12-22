@@ -34,7 +34,7 @@ const Contact = () => {
 
     return (
         <div className=''>
-            <div className='w-full h-[50vh] xl:h-[75vh] bg-[url(/3.png)] bg-no-repeat pt-[70px] overflow-hidden'>
+            <div className='w-full h-[45vh] xs:h-[50vh] xl:h-[75vh] bg-[url(/3.png)] bg-no-repeat pt-[70px] overflow-hidden'>
                 {/* <div className= absolute top-[60%] left-[50%] flex items-center gap-5 '>
                     <span className='border-2 border-white p-3 rounded-full '>
                         <LocalPhoneOutlinedIcon className='text-white font-extrabold' fontSize='large' />
@@ -49,8 +49,8 @@ const Contact = () => {
                         <ChatIcon className='text-white font-extrabold' fontSize='large' />
                     </span>
                 </div> */}
-                <div className='grid grid-cols-1 xs:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
-                    <div className='flex justify-center xs:justify-start lg:justify-center items-center'>
+                <div className='flex justify-between xs:grid xs:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
+                    <div className='flex justify-start lg:justify-center items-center border-2 border-red-500'>
                         <div className='w-[150px] xs:w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-fit lg:h-[175px]'>
                             <video
                                 width="100%"
@@ -67,7 +67,7 @@ const Contact = () => {
                             </video>
                         </div>
                     </div>
-                    <div className='flex justify-end lg:justify-center items-center relative overflow-hidden'>
+                    <div className='flex-1 flex justify-end lg:justify-center items-center relative overflow-hidden border-4 border-red-500'>
                         <Image
                             src='/contact-us1.png'
                             alt="banner"
@@ -75,18 +75,18 @@ const Contact = () => {
                             height={500}
                             quality={95}
                             priority={true}
-                            className='max-w-full mt-auto w-[230px] sm:w-[270px] md:w-[280px] xxl:w-[60%] h-fit ml-auto lg:ml-0'
+                            className='max-w-full sm:mt-auto w-[230px] sm:w-[270px] md:w-[280px] xxl:w-[60%] h-fit ml-auto lg:ml-0'
                         />
-                        <span className='border-2 border-white p-2.5 lg:p-3 rounded-full absolute top-[50px] left-[80px] xs:left-[100px] sm:left-[80px] md:left-[120px]'>
+                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[50px] left-[80px] xs:left-[100px] sm:left-[70px] md:left-[120px]'>
                             <LocalPhoneOutlinedIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
                         </span>
-                        <span className='border-2 border-white p-2.5 lg:p-3 rounded-full absolute top-[120px] left-[20px] xs:left-[40px] sm:left-[20px] md:left-[50px]'>
+                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[120px] left-[20px] xs:left-[40px] sm:left-[20px] md:left-[50px]'>
                             <EmailOutlinedIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
                         </span>
-                        <span className='border-2 border-white p-2.5 lg:p-3 rounded-full absolute top-[200px] left-[0px] xs:left-[12px] sm:left-0 md:left-[10px]'>
+                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[200px] left-[0px] xs:left-[5px] sm:left-0 md:left-[10px]'>
                             <ChatIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
                         </span>
-                        <span className='border-2 border-white p-2.5 lg:p-3 rounded-full absolute top-[280px] left-[10px] xs:left-[40px] sm:left-[10px] lg:left-[60px]'>
+                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[280px] left-[10px] xs:left-[20px] sm:left-[10px] lg:left-[60px]'>
                             <FmdGoodIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
                         </span>
                     </div>
