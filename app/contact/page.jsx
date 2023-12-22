@@ -49,8 +49,8 @@ const Contact = () => {
                         <ChatIcon className='text-white font-extrabold' fontSize='large' />
                     </span>
                 </div> */}
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
-                    <div className='flex justify-center sm:justify-start lg:justify-center items-center'>
+                <div className='grid grid-cols-1 xs:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
+                    <div className='flex justify-center xs:justify-start lg:justify-center items-center'>
                         <div className='w-[150px] xs:w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-fit lg:h-[175px]'>
                             <video
                                 width="100%"
@@ -60,7 +60,7 @@ const Contact = () => {
                                 loop={true}
                                 // poster="/echoCartPoster.png"
                                 // style={{ maxWidth: '100%', width: '100%', height: 'auto', display: 'block', margin: 'auto' }}
-                                className='rounded-[2.7rem] lg:rounded-[3rem] mr-auto'
+                                className='rounded-[1rem] sm:rounded-[2.7rem] lg:rounded-[3rem] mr-auto'
                             >
                                 <source src="/contact4.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
