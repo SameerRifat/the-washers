@@ -172,7 +172,7 @@ const Services = () => {
 
             <SectionHeading>Other Services</SectionHeading>
             <div className='w-full services overflow-hidden'>
-                <Slider {...settings2} className='h-full w-full'>
+                <Slider {...settings2} className='h-full w-full px-3'>
                     {services.map((slide, index) => {
                         return (
                             <div className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-md'>

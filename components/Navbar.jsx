@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`absolute top-0 left-0 w-full h-[70px] bg-black/40  flex z-50 `}>
+            <nav className={`absolute top-0 left-0 w-full h-[60px] sm:h-[70px] bg-black/40  flex z-50 `}>
             {/* <nav className={`absolute top-0 left-0 w-full h-[70px] ${!isNotHomePage && 'bg-black/40'} ${isNotHomePage && 'bg-black/90'}  flex z-50 `}> */}
                 <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between'>
                     <div className=' flex items-center'>
