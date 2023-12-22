@@ -6,94 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import Link from 'next/link';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import UpdateOutlinedIcon from '@mui/icons-material/UpdateOutlined';
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Dialog } from '@headlessui/react';
-
-const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-]
-
-const Navbar = () => {
-    const [open, setOpen] = useState(false)
-    return (
-        <>
-            <nav className="absolute top-0 left-0 w-full h-[70px] flex z-50">
-                <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between'>
-                    <div className=' flex items-center'>
-                        <Link href='/'>
-                            {/* <Image src="/logo.png" alt="Logo" width={100} height={50} /> */}
-                            <h2 className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
-                        </Link>
-                    </div>
-                    <div className="hidden md:flex  ">
-                        <div className='space-x-10 text-base font-semibold flex items-center'>
-                            {navigation.map((navLink) => {
-                                return (
-                                    <Link
-                                        key={navLink.name}
-                                        href={navLink.href}
-                                        className='text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
-                                    >
-                                        {navLink.name}
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-4 rounded-br-3xl rounded-bl-3xl'>
-                            <LocalPhoneOutlinedIcon className='text-white'/>
-                            <span className='text-white text-lg font-extrabold'>800 939</span>
-                        </div>
-                    </div>
-                    <button onClick={() => setOpen(true)} className='md:hidden text-white'>
-                        <MenuOutlinedIcon />
-                    </button>
-                </div>
-            </nav>
-            <Dialog as="div" className="md:hidden" open={open} onClose={setOpen}>
-                <div className="fixed inset-0 z-50" />
-                <Dialog.Panel className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div className="flex items-center justify-between">
-                        <Link href='/' className="-m-1.5 p-1.5" onClick={() => setOpen(false)}>
-                            {/* <Image src="/logo.png" alt="Logo" width={100} height={50} /> */}
-                            <h2 className='font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
-                        </Link>
-                        <button
-                            type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                            onClick={() => setOpen(false)}
-                        >
-                            <CloseOutlinedIcon />
-                        </button>
-                    </div>
-                    <div className="mt-6 flow-root">
-                        <div className="flex flex-col justify-start gap-5 ">
-                            {navigation.map((navLink) => {
-                                return (
-                                    <Link key={navLink.name}
-                                        href={navLink.href}
-                                        onClick={() => setOpen(false)}
-                                        className='text-black w-fit px-2 py-1 font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
-                                    >
-                                        {navLink.name}
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </Dialog.Panel>
-            </Dialog>
-        </>
-    );
-};
-
 
 const SlideContent = ({ image, title }) => (
     <div className='w-full h-[40vh] xs:h-[60vh] md:h-[95vh] relative'>
@@ -142,26 +57,25 @@ const Header = () => {
 
     const slides = [
         {
-            image: "/b1.jpg",
+            image: "/banner1.jpg",
             title: ["#Cleaning &", "Maintenance", "Services in UAE"],
         },
         {
-            image: "/b2.jpg",
+            image: "/banner2.jpg",
             title: ["Fast", "Reliable & Efficient", "Services"],
         },
         {
-            image: "/b3.jpg",
+            image: "/banner3.jpg",
             title: ["Get A Free Quote", "Need a help?", "Just Click Below"],
         },
         {
-            image: "/b4.jpg",
+            image: "/banner4.jpg",
             title: ["Our Mission", "To Give You More", "Free Time"],
         }
     ];
 
     return (
         <>
-            <Navbar />
             <header>
                 <div className='w-full m-0 p-0 overflow-hidden'>
                     <Slider {...settings} className='h-full w-full'>

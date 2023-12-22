@@ -11,3 +11,13 @@
 .container{
   @apply w-[90%] mx-auto
 }
+
+.services .slick-slide > div {
+  @apply max-sm:mx-2 md:mx-[10px] lg:mx-[15px] my-0
+}
+.services .slick-list {
+  @apply -mx-[15px] my-0
+}
+.slick-dots {
+  color: blue;
+}
