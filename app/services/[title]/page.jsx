@@ -9,7 +9,7 @@ import React from 'react';
 
 const services = [
     {
-        imgSrc: '/mattressCleaning2.jpg',
+        imgSrc: '/rugsCleaningBanner2.jpg',
         title: 'Mattress Cleaning',
         desc: 'Mattress Cleaning description'
     },
@@ -29,7 +29,7 @@ const services = [
         desc: 'Curtains Cleaning description'
     },
     {
-        imgSrc: '/chairCleaning1.jpg',
+        imgSrc: '/chairCleaingBanner.jpg',
         title: 'Chairs Cleaning',
         desc: 'Chairs Cleaning description'
     },
@@ -53,6 +53,11 @@ const services = [
         title: 'House Maid Service',
         desc: 'House Maid Service description'
     },
+    {
+        imgSrc: '/houseCleaningBanner.jpg',
+        title: 'House Cleaning Service',
+        desc: 'House Cleaning Service Description'
+    },
 ]
 
 const ServiceDetail = ({ params }) => {
@@ -62,7 +67,7 @@ const ServiceDetail = ({ params }) => {
 
     return (
         <>
-            <div className='w-full h-[20vh] xxs:h-[25vh] xs:h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[50vh] xl:h-[60vh] relative'>
+            <div className='w-full h-[10vh] xxxs:h-[15vh] xxs:h-[20vh] xs:h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[45vh] xl:h-[50vh] relative'>
                 <Image
                     src={service.imgSrc}
                     alt="banner"
@@ -72,15 +77,14 @@ const ServiceDetail = ({ params }) => {
                     priority={true}
                     className='max-w-full w-full h-full'
                 />
-                <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40 pt-[60px] sm:pt-[70px]'>
+                <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px]'>
                     <div className='w-full h-full flex flex-col justify-center items-center'>
-                        <h1 className='font-bold xs:font-extrabold text-2xl xs:text-4xl sm:text-5xl text-white flex flex-col gap-1 xxs:gap-2 xs:gap-3 sm:gap-4 mb-1 sm:mb-3 md:mb-5'>
+                        <h1 className='font-semibold xxxs:font-bold xs:font-extrabold text-xl xxxs:text-2xl xs:text-4xl sm:text-5xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-1 sm:mb-3 md:mb-5'>
                             {service.title}
                         </h1>
                         <Link
                             href='/contact'
-                            className='px-3 xxs:px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-medium xs:font-semibold text-xs xxs:text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
-            outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600 mb-2 sm:bottom-0'
+                            className='primaryBtn'
                             style={{}}
                         >
                             Request a Call Back

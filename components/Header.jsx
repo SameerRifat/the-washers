@@ -11,7 +11,7 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[25vh] xxs:h-[30vh] xs:h-[40vh] md:h-[50vh] xl:h-[80vh] relative'>
+    <div className='w-full h-[20vh] xxs:h-[25vh] xs:h-[35vh] md:h-[45vh] xl:h-[80vh] relative'>
         <Image
             src={image}
             alt="banner"
@@ -21,17 +21,16 @@ const SlideContent = ({ image, title }) => (
             priority={true}
             className='max-w-full w-full h-full'
         />
-        <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40 pt-[60px] sm:pt-[70px] pb-5 sm:pb-[50px]'>
+        <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px] pb-1 xxs:pb-2 xs:pb-5 sm:pb-[50px]'>
             <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5 leading-none'>
+                <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5 leading-none'>
                     {title.map((text, index) => (
                         <span key={index}>{text}</span>
                     ))}
                 </h1>
                 <Link
                     href='/contact'
-                    className='px-3 xxs:px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-medium xs:font-semibold text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
-            outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600'
+                    className='primaryBtn'
                     style={{}}
                 >
                     Request a Call Back

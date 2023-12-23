@@ -24,13 +24,13 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`absolute top-0 left-0 w-full h-[50px] xxs:h-[60px] sm:h-[70px] bg-black/40  flex z-50 shadow-lg `}>
+            <nav className={`absolute top-0 left-0 w-full h-[40px] xxxs:h-[50px] xxs:h-[60px] sm:h-[70px] bg-black/40  flex z-50 shadow-lg `}>
             {/* <nav className={`absolute top-0 left-0 w-full h-[70px] ${!isNotHomePage && 'bg-black/40'} ${isNotHomePage && 'bg-black/90'}  flex z-50 `}> */}
                 <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between'>
                     <div className=' flex items-center'>
                         <Link href='/'>
                             {/* <Image src="/logo.png" alt="Logo" width={100} height={50} /> */}
-                            <h2 className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
+                            <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2>
                         </Link>
                     </div>
                     <div className="hidden md:flex  ">

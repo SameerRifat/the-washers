@@ -74,6 +74,10 @@ const services = [
         imgSrc: '/sofa6.jpg',
         title: 'Sofa Cleaning',
     },
+    {
+        imgSrc: '/houseCleaning.jpg',
+        title: 'House Cleaning Service',
+    },
 ]
 
 const Services = () => {
@@ -183,7 +187,7 @@ const Services = () => {
                             <Link
                                 key={slide.title}
                                 href={`/services/${encodeURIComponent(slide.title.replace(/\s+/g, '-'))}`}
-                                className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-xl'
+                                className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-xl outline-none'
                             >
                                 <Image
                                     key={slide.title}
