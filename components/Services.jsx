@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionHeading from './SectionHeading';
+import Link from 'next/link';
 
 const slides = [
     {
@@ -50,7 +51,7 @@ const services = [
         title: 'Rugs Cleaning',
     },
     {
-        imgSrc: '/curtains1.jpg',
+        imgSrc: '/curtrains4.jpg',
         title: 'Curtains Cleaning',
     },
     {
@@ -66,8 +67,12 @@ const services = [
         title: 'Deep Cleaning',
     },
     {
+        imgSrc: '/homeMaid3.jpg',
+        title: 'House Maid Service',
+    },
+    {
         imgSrc: '/sofa6.jpg',
-        title: 'Sofa Clean',
+        title: 'Sofa Cleaning',
     },
 ]
 
@@ -116,7 +121,7 @@ const Services = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                      initialSlide: 2
+                    initialSlide: 2
                 }
             },
             {
@@ -175,7 +180,11 @@ const Services = () => {
                 <Slider {...settings2} className='h-full w-full px-3'>
                     {services.map((slide, index) => {
                         return (
-                            <div className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-md'>
+                            <Link
+                                key={slide.title}
+                                href={`/services/${encodeURIComponent(slide.title.replace(/\s+/g, '-'))}`}
+                                className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-xl'
+                            >
                                 <Image
                                     key={slide.title}
                                     src={slide.imgSrc}
@@ -188,13 +197,12 @@ const Services = () => {
                                 />
                                 <h2 className='mt-5 text-xl font-bold text-center'>{slide.title}</h2>
 
-                                {/* Apply shadow styles on hover */}
                                 <style jsx>{`
                                         .group:hover {
                                         box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 255, 0, 0.5);
                                         }
                                 `}</style>
-                            </div>
+                            </Link>
                             // <div className='p-3 my-3 rounded-lg shadow-lg border border-gray-500/10 hover:scale-[1.03] transition-all cursor-pointer hover:shadow-blue-500'>
                             //     <Image
                             //         key={slide.title}

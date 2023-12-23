@@ -11,7 +11,7 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[40vh] xxs:h-[45vh] xs:h-[60vh] md:h-[70vh] lg:h-[95vh] relative'>
+    <div className='w-full h-[25vh] xxs:h-[30vh] xs:h-[40vh] md:h-[50vh] xl:h-[80vh] relative'>
         <Image
             src={image}
             alt="banner"
@@ -21,9 +21,9 @@ const SlideContent = ({ image, title }) => (
             priority={true}
             className='max-w-full w-full h-full'
         />
-        <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40'>
-            <div className='ml-5 xs:ml-8 sm:ml-14 lg:ml-20 mb-4 sm:mb-20'>
-                <h1 className='font-bold xs:font-extrabold text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-2 xs:gap-3 sm:gap-4 mb-5'>
+        <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40 pt-[60px] sm:pt-[70px] pb-5 sm:pb-[50px]'>
+            <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
+                <h1 className='font-bold xs:font-extrabold text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5'>
                     {title.map((text, index) => (
                         <span key={index}>{text}</span>
                     ))}
@@ -58,18 +58,18 @@ const Header = () => {
     const slides = [
         {
             image: "/banner1.jpg",
-            title: ["#Cleaning &", "Maintenance", "Services in UAE"],
+            title: ["#Cleaning", "Services in UAE"],
         },
         {
-            image: "/banner2.jpg",
+            image: "/carpetCleaningBanner.jpg",
             title: ["Fast", "Reliable & Efficient", "Services"],
         },
         {
-            image: "/banner3.jpg",
+            image: "/rugsCleaningBanner2.jpg",
             title: ["Get A Free Quote", "Need a help?", "Just Click Below"],
         },
         {
-            image: "/banner4.jpg",
+            image: "/homeMaidBanner3.jpg",
             title: ["Our Mission", "To Give You More", "Free Time"],
         }
     ];
@@ -101,8 +101,8 @@ const Header = () => {
                         <HomeWorkOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>All Over UAE</h3>
-                        <p className='text-white'>Commercial & Residential Building Maintenance Anywhere in UAE </p>
+                        <h3 className='text-white font-semibold text-xl'>Service in UAE</h3>
+                        <p className='text-white'>Commercial & Residential Building Cleaning in Dubai, Sharjah & Ajman </p>
                     </div>
                     <div className='w-full h-1 lg:h-2 absolute bottom-0 left-0 bg-gradient-to-r from-blue-600 to-green-500'>
 

@@ -22,7 +22,7 @@ const DeepClean = () => {
                 </div>
                 <div className='w-full overflow-hidden'>
                     <Image
-                        src='/deepClean.jpg'
+                        src='/sofaCleaningComarison2.jpg'
                         alt="service image"
                         width={350}
                         height={350}
