@@ -11,7 +11,7 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[30vh] xxs:h-[35vh] xs:h-[45vh] md:h-[50vh] xl:h-[80vh] relative'>
+    <div className='w-full h-[25vh] xxs:h-[30vh] xs:h-[40vh] md:h-[50vh] xl:h-[80vh] relative'>
         <Image
             src={image}
             alt="banner"
