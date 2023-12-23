@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,12 +12,21 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useMediaQuery } from 'react-responsive';
 
 const SlideContent = ({ image, image2, title, image3 }) => {
+    const [forceRerender, setForceRerender] = useState(false);
+
     const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
     const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 }); // Adjust the values based on your medium device breakpoint
+    // console.log('isSmallScreen: ', isSmallScreen)
+    // console.log('isMediumScreen: ', isMediumScreen)
+
+    useEffect(() => {
+        // Force a re-render when the screen size changes
+        setForceRerender(prevState => !prevState);
+    }, [isSmallScreen, isMediumScreen]);
 
 
     return (
-        <div className='w-full h-[35vh] xxs:h-[40vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[80vh] relative'>
+        <div key={forceRerender} className='w-full h-[35vh] xxs:h-[40vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[80vh] relative'>
             <Image
                 // src={isSmallScreen ? image2 : image}
                 src={isSmallScreen ? image2 : (isMediumScreen ? image3 : image)}
