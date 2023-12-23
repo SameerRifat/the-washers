@@ -30,7 +30,7 @@ const SlideContent = ({ image, title }) => (
                 </h1>
                 <Link
                     href='/contact'
-                    className='px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-medium xs:font-semibold text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
+                    className='px-3 xxs:px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-medium xs:font-semibold text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
             outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600'
                     style={{}}
                 >
