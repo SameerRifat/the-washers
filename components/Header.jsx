@@ -11,7 +11,7 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[25vh] xxs:h-[30vh] xs:h-[40vh] md:h-[50vh] xl:h-[80vh] relative'>
+    <div className='w-full h-[30vh] xxs:h-[35vh] xs:h-[45vh] md:h-[50vh] xl:h-[80vh] relative'>
         <Image
             src={image}
             alt="banner"
@@ -23,7 +23,7 @@ const SlideContent = ({ image, title }) => (
         />
         <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40 pt-[60px] sm:pt-[70px] pb-5 sm:pb-[50px]'>
             <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                <h1 className='font-bold xs:font-extrabold text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5'>
+                <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5 leading-none'>
                     {title.map((text, index) => (
                         <span key={index}>{text}</span>
                     ))}

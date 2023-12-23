@@ -80,7 +80,7 @@ const ServiceDetail = ({ params }) => {
                         <Link
                             href='/contact'
                             className='px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-medium xs:font-semibold text-xs xxs:text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
-            outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600'
+            outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600 mb-2 sm:bottom-0'
                             style={{}}
                         >
                             Request a Call Back
