@@ -74,7 +74,7 @@ const ServiceDetail = ({ params }) => {
                 />
                 <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-40 pt-[60px] sm:pt-[70px]'>
                     <div className='w-full h-full flex flex-col justify-center items-center'>
-                        <h1 className='font-bold xs:font-extrabold text-2xl xs:text-4xl sm:text-5xl text-white flex flex-col gap-1 xxs:gap-2 xs:gap-3 sm:gap-4 mb-5'>
+                        <h1 className='font-bold xs:font-extrabold text-2xl xs:text-4xl sm:text-5xl text-white flex flex-col gap-1 xxs:gap-2 xs:gap-3 sm:gap-4 mb-1 sm:mb-3 md:mb-5'>
                             {service.title}
                         </h1>
                         <Link
