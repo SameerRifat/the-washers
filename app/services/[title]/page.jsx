@@ -9,7 +9,7 @@ import React from 'react';
 
 const services = [
     {
-        imgSrc: '/rugsCleaningBanner2.jpg',
+        imgSrc: '/MattressBanner.jpg',
         title: 'Mattress Cleaning',
         desc: 'Mattress Cleaning description'
     },

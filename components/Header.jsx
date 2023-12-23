@@ -11,13 +11,16 @@ import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useMediaQuery } from 'react-responsive';
 
-const SlideContent = ({ image, image2, title }) => {
+const SlideContent = ({ image, image2, title, image3 }) => {
     const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
+    const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 }); // Adjust the values based on your medium device breakpoint
+
 
     return (
-        <div className='w-full h-[30vh] xxs:h-[40vh] xs:h-[35vh] sm:[14vh] md:h-[35vh] xl:h-[80vh] relative'>
+        <div className='w-full h-[30vh] xxs:h-[40vh] xs:h-[35vh] sm:[14vh] md:h-[50vh] lg:h-[60vh] xl:h-[80vh] relative'>
             <Image
-                src={isSmallScreen ? image2 : image}
+                // src={isSmallScreen ? image2 : image}
+                src={isSmallScreen ? image2 : (isMediumScreen ? image3 : image)}
                 alt="banner"
                 width={1200}
                 height={1000}
@@ -27,7 +30,9 @@ const SlideContent = ({ image, image2, title }) => {
             />
             <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px] pb-1 xxs:pb-2 xs:pb-5 sm:pb-[50px]'>
                 <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                    <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-2 sm:mb-3 md:bottom-5 leading-none'>
+                    <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-2 sm:mb-3 md:bottom-5 leading-none
+                                    bg-black/10 w-fit p-1 rounded-lg'
+                    >
                         {title.map((text, index) => (
                             <span key={index}>{text}</span>
                         ))}
@@ -62,21 +67,25 @@ const Header = () => {
         {
             image: "/banner1.jpg",
             image2: "/test2.jpeg",
+            image3: "/mediumScreeenBanner1.jpg",
             title: ["#Cleaning", "Services in UAE"],
         },
         {
             image: "/carpetCleaningBanner.jpg",
             image2: "/test3.jpeg",
+            image3: "/mediumScreeenBanner2.jpg",
             title: ["Fast", "Reliable & Efficient", "Services"],
         },
         {
             image: "/rugsCleaningBanner2.jpg",
             image2: "/test4.jpeg",
+            image3: "/mediumScreeenBanner3.jpg",
             title: ["Get A Free Quote", "Need a help?", "Just Click Below"],
         },
         {
             image: "/homeMaidBanner3.jpg",
             image2: "/test5.jpeg",
+            image3: "/mediumScreeenBanner4.jpg",
             title: ["Our Mission", "To Give You More", "Free Time"],
         }
     ];
