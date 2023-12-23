@@ -15,7 +15,7 @@ const SlideContent = ({ image, image2, title }) => {
     const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
 
     return (
-        <div className='w-full h-[30vh] xxs:h-[40vh] xs:h-[35vh] sm:[18vh] md:h-[45vh] xl:h-[80vh] relative'>
+        <div className='w-full h-[30vh] xxs:h-[40vh] xs:h-[35vh] sm:[16vh] md:h-[35vh] xl:h-[80vh] relative'>
             <Image
                 src={isSmallScreen ? image2 : image}
                 alt="banner"
