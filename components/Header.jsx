@@ -9,37 +9,41 @@ import Link from 'next/link';
 import UpdateOutlinedIcon from '@mui/icons-material/UpdateOutlined';
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { useMediaQuery } from 'react-responsive';
 
-const SlideContent = ({ image, title }) => (
-    <div className='w-full h-[20vh] xxs:h-[25vh] xs:h-[35vh] md:h-[45vh] xl:h-[80vh] relative'>
-        <Image
-            src={image}
-            alt="banner"
-            width={1200}
-            height={1000}
-            quality={95}
-            priority={true}
-            className='max-w-full w-full h-full'
-        />
-        <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px] pb-1 xxs:pb-2 xs:pb-5 sm:pb-[50px]'>
-            <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-3 sm:mb-5 leading-none'>
-                    {title.map((text, index) => (
-                        <span key={index}>{text}</span>
-                    ))}
-                </h1>
-                <Link
-                    href='/contact'
-                    className='primaryBtn'
-                    style={{}}
-                >
-                    Request a Call Back
-                </Link>
+const SlideContent = ({ image, image2, title }) => {
+    const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
+
+    return (
+        <div className='w-full h-[30vh] xxs:h-[40vh] xs:h-[35vh] sm:[30vh] md:h-[45vh] xl:h-[80vh] relative'>
+            <Image
+                src={isSmallScreen ? image2 : image}
+                alt="banner"
+                width={1200}
+                height={1000}
+                quality={95}
+                priority={true}
+                className='max-w-full w-full h-full'
+            />
+            <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px] pb-1 xxs:pb-2 xs:pb-5 sm:pb-[50px]'>
+                <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
+                    <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-2 sm:mb-3 md:bottom-5 leading-none'>
+                        {title.map((text, index) => (
+                            <span key={index}>{text}</span>
+                        ))}
+                    </h1>
+                    <Link
+                        href='/contact'
+                        className='primaryBtn'
+                        style={{}}
+                    >
+                        Request a Call Back
+                    </Link>
+                </div>
             </div>
         </div>
-    </div>
-);
-
+    );
+};
 
 
 const Header = () => {
@@ -57,18 +61,22 @@ const Header = () => {
     const slides = [
         {
             image: "/banner1.jpg",
+            image2: "/test2.jpeg",
             title: ["#Cleaning", "Services in UAE"],
         },
         {
             image: "/carpetCleaningBanner.jpg",
+            image2: "/test3.jpeg",
             title: ["Fast", "Reliable & Efficient", "Services"],
         },
         {
             image: "/rugsCleaningBanner2.jpg",
+            image2: "/test4.jpeg",
             title: ["Get A Free Quote", "Need a help?", "Just Click Below"],
         },
         {
             image: "/homeMaidBanner3.jpg",
+            image2: "/test5.jpeg",
             title: ["Our Mission", "To Give You More", "Free Time"],
         }
     ];
