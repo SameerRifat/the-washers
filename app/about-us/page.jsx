@@ -118,7 +118,7 @@ const ServiceDetail = () => {
                         </div>
                         <div className='w-auto xl:w-[90%] h-auto mx-auto mt-5 sm:mt-10'>
                             <Image
-                                src={isMediumScreen ? '/aboutUsDetail2.jpg' : '/aboutUsDetail1.jpg'}
+                                src={isMediumScreen ? '/aboutUsDetail1.jpg' : '/aboutUsDetail2.jpg'}
                                 alt="service image"
                                 width={350}
                                 height={350}
