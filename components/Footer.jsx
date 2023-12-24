@@ -4,6 +4,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import Link from 'next/link';
 import { IndeterminateCheckBoxOutlined } from '@mui/icons-material';
+import Image from 'next/image';
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -61,12 +62,14 @@ const Footer = () => {
                             })}
                         </ul>
                     </div>
-                    <div className=' order-1 sm:order-3'>
-                        <Link href='/'>
-                            {/* <Image src="/logo.png" alt="Logo" width={100} height={50} /> */}
-                            <h2 className='font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-blue-500 to-green-500'>TheWashers</h2>
-                        </Link>
-                        <p className='text-sm pl-3 mt-2'>
+                    <div className=' order-1 sm:order-3 flex flex-col '>
+                        <div className='flex items-start justify-start h-20 w-40 relative'>
+                            {/* <Link href='/' className=' w-full h-full relative'> */}
+                                <Image src="/logo.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto absolute top-[-55px] left-0' />
+                                {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
+                            {/* </Link> */}
+                        </div>
+                        <p className='text-sm pl-3'>
                             <span className='font-medium'>TheWashers</span> is a professional cleaning company that is fully insured and bonded and will serve all your cleaning services needs in a professional way through an immense range of environment friendly safe - cleaning products, and with a dedicated team of professionals, to build the customers' satisfaction, at a very reasonable cost.
                         </p>
                     </div>

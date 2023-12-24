@@ -68,7 +68,7 @@ const services = [
     },
     {
         imgSrc: '/homeMaid3.jpg',
-        title: 'House Maid Service',
+        title: 'House Maid',
     },
     {
         imgSrc: '/sofa6.jpg',
@@ -76,7 +76,7 @@ const services = [
     },
     {
         imgSrc: '/houseCleaning.jpg',
-        title: 'House Cleaning Service',
+        title: 'House Cleaning',
     },
 ]
 
@@ -121,7 +121,7 @@ const Services = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -142,7 +142,7 @@ const Services = () => {
 
             <div className='mb-20'>
                 <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Service Company</h2>
-                <p>The Washers, is a professional housekeeping company doing cleaning services all over UAE.</p>
+                <p>Elevate Your Living Space with TheWashers, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>

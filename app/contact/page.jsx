@@ -157,10 +157,11 @@ const Contact = () => {
                     </div> */}
                 </div>
             </div>
+
             <div className='w-[90%] mx-auto max-w-[1600px] flex flex-col gap-10'>
                 <div>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28875.717604923306!2d55.402924712370705!3d25.221268647257517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f60bde888939f%3A0x2245c09926a8f686!2sMirdif%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1703154940262!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.842461342649!2d55.3723842!3d25.3094965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b60b61df7d3%3A0x87c098a04693fc50!2sK8%20tower!5e0!3m2!1sen!2s!4v1703396412059!5m2!1sen!2s"                        // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28875.717604923306!2d55.402924712370705!3d25.221268647257517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f60bde888939f%3A0x2245c09926a8f686!2sMirdif%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1703154940262!5m2!1sen!2s"
                         width="100%"
                         height="400"
                         style={{ border: 0 }}

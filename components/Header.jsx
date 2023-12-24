@@ -15,12 +15,9 @@ const SlideContent = ({ image, image2, title, image3 }) => {
     const [forceRerender, setForceRerender] = useState(false);
 
     const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
-    const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 }); // Adjust the values based on your medium device breakpoint
-    // console.log('isSmallScreen: ', isSmallScreen)
-    // console.log('isMediumScreen: ', isMediumScreen)
+    const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 }); 
 
     useEffect(() => {
-        // Force a re-render when the screen size changes
         setForceRerender(prevState => !prevState);
     }, [isSmallScreen, isMediumScreen]);
 
@@ -37,10 +34,10 @@ const SlideContent = ({ image, image2, title, image3 }) => {
                 priority={true}
                 className='max-w-full w-full h-full'
             />
-            <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-20 pt-[60px] sm:pt-[70px] pb-1 xxs:pb-2 xs:pb-7 sm:pb-[50px]'>
+            <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-20 pt-[60px] sm:pt-[70px] pb-2 xxs:pb-3 xs:pb-5 lg:pb-[50px]'>
                 <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                    <h1 className='font-bold xs:font-extrabold text-xl xxs:text-2xl xs:text-4xl sm:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-2 sm:mb-3 md:mb-5 leading-none
-                                    bg-black/25 w-fit p-1 rounded-lg'
+                    <h1 className='font-bold xs:font-bold text-xl xxxs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 sm:gap-2 lg:gap-4 mb-2 sm:mb-3 lg:mb-5 leading-none
+                                    bg-black/10 w-fit p-1 rounded-lg'
                     >
                         {title.map((text, index) => (
                             <span key={index}>{text}</span>
@@ -126,7 +123,7 @@ const Header = () => {
                         <HomeWorkOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>Service in UAE</h3>
+                        <h3 className='text-white font-semibold text-xl'>Services in UAE</h3>
                         <p className='text-white'>Commercial & Residential Building Cleaning in Dubai, Sharjah & Ajman </p>
                     </div>
                     <div className='w-full h-1 lg:h-2 absolute bottom-0 left-0 bg-gradient-to-r from-blue-600 to-green-500'>
