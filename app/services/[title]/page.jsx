@@ -1,5 +1,6 @@
 'use client'
 import SectionHeading from '@/components/SectionHeading';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 // pages/services/[title].js
@@ -13,7 +14,7 @@ import remarkGfm from 'remark-gfm';
 const services = [
     {
         banner1: '/MattressBanner.jpg',
-        serviceDetailImg: '/mediumScreeenBanner2.jpg',
+        serviceDetailImg: '/mattress1.jpg',
         banner2: '/serviceDetailBanner1.jpg',
         title: 'Mattress Cleaning',
         subtitle: 'Experience Deep Sleep Comfort with Our Mattress Cleaning Service – Revitalize Your Mattress for a Healthier Rest.',
@@ -46,7 +47,7 @@ const services = [
     },
     {
         banner1: '/carpetCleaningBanner.jpg',
-        serviceDetailImg: '/mediumScreeenBanner1.jpg',
+        serviceDetailImg: '/mediumScreeenBanner2.jpg',
         banner2: '/serviceDetailBanner2.jpg',
         title: 'Carpet Cleaning',
         subtitle: 'Revitalize Your Home with Our Advanced Carpet Cleaning Service – Beyond Surface Cleaning for Lasting Freshness.',
@@ -440,6 +441,11 @@ const ServiceDetail = ({ params }) => {
 
     return (
         <>
+            <Head>
+                <title>{`${service.title} Service - TheWashers`}</title>
+                <meta name="description" content="Professional cleaning service for your home or office. Book now for quality cleaning solutions." />
+                {/* Add other meta tags as needed */}
+            </Head>
             <div key={forceRerender} className='w-full h-[20vh] xxxs:h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[45vh] xl:h-[50vh] relative'>
                 <Image
                     // src={service.banner1}

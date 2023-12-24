@@ -87,7 +87,7 @@ const Navbar = () => {
                 <div className='w-[90%] mx-auto max-w-[1600px] flex justify-between'>
                     <div className=' flex items-center'>
                         <Link href='/'>
-                            <Image src="/logo.png" alt="Logo" width={150} height={100} className='max-w-full w-28 xxxs:w-32 sm:w-40 h-auto' />
+                            <Image src="/logo2.png" alt="Logo" width={150} height={100} className='max-w-full w-28 xxxs:w-32 sm:w-40 h-auto' />
                             {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                         </Link>
                     </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                                     return (
                                         <Menu as="div" className="relative inline-block text-left">
                                             <div>
-                                                <Menu.Button className="inline-flex items-center w-full justify-center gap-x-1.5 rounded-m px-3 py-2 text-base font-semibold text-white">
+                                                <Menu.Button className="inline-flex items-center w-full justify-center gap-x-1.5 rounded-m px-3 py-2 text-base font-medium text-white">
                                                     Services
                                                     <ArrowDropDownIcon className="-mr-1 text-white" aria-hidden="true" fontSize='medium' />
                                                 </Menu.Button>
@@ -122,8 +122,8 @@ const Navbar = () => {
                                                                         <Link
                                                                             href={child.href}
                                                                             className={classNames(
-                                                                                active ? 'bg-gradient-to-r from-blue-500 to-green-500 text-white transition-all group' : 'text-gray-700',
-                                                                                'block px-4 py-2 text-xs shadow-sm'
+                                                                                active ? 'text-green-500 bg-gray-200 transition-all' : 'text-gray-700',
+                                                                                'block px-4 py-2 text-xs shadow-sm text-gray-700 font-normal'
                                                                             )}
                                                                         >
                                                                             <span
@@ -146,7 +146,7 @@ const Navbar = () => {
                                         <Link
                                             key={navLink.name}
                                             href={navLink.href}
-                                            className='text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all hover:font-semibold'
+                                            className='text-white font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
                                         >
                                             {navLink.name}
                                         </Link>
@@ -169,9 +169,9 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-50" />
                 <Dialog.Panel className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <div className='flex items-start justify-start h-20 w-40 relative'>
+                        <div className='flex items-start justify-start h-20 w-40'>
                             {/* <Link href='/' className=' w-full h-full relative'> */}
-                            <Image src="/logo.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto absolute top-[-55px] left-0' />
+                            <Image src="/logo2.png" alt="Logo" quality={95} priority={true} width={150} height={100} className='max-w-full w-full h-auto' />
                             {/* <h2 className='font-bold xxxs:font-extrabold text-transparent text-xl xxxs:text-2xl bg-clip-text bg-gradient-to-tr from-blue-500 to-green-500'>TheWashers</h2> */}
                             {/* </Link> */}
                         </div>
@@ -195,7 +195,7 @@ const Navbar = () => {
                                             {({ open }) => (
                                                 <>
                                                     <h3 className="-mx-2 flow-root">
-                                                        <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-">
+                                                        <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2">
                                                             <span className="font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all">Services</span>
                                                             <span className="ml-6 flex items-center">
                                                                 {open ? (
@@ -206,10 +206,10 @@ const Navbar = () => {
                                                             </span>
                                                         </Disclosure.Button>
                                                     </h3>
-                                                    <Disclosure.Panel className="pt-6 pl-2">
-                                                        <div className="space-y-6">
+                                                    <Disclosure.Panel className="pt-3 pl-2">
+                                                        <div className="space-y-3">
                                                             {navLink.children.map((child) => (
-                                                                <div key={child.id} className="flex items-center">
+                                                                <div key={child.id} className="flex items-center text-sm py-0.5 font-normal">
                                                                     <Link
                                                                         href={child.href}
                                                                         onClick={() => setOpen(false)}

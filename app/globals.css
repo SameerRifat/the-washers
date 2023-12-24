@@ -27,13 +27,13 @@
   outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600
 }
 
-.service-highlights, .additionalbenefits{
+.service-highlights, .additional-benefits{
   @apply flex flex-col gap-2
 }
-.service-highlights h2, .additionalbenefits h2{
+.service-highlights>h2, .additional-benefits>h2{
   @apply font-bold text-lg
 }
-.service-highlights ul, .additionalbenefits ul{
+.service-highlights>ul, .additional-benefits>ul{
   @apply list-disc pl-7
 }
 

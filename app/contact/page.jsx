@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -9,6 +9,9 @@ import { useMediaQuery } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import SendIcon from '@mui/icons-material/Send';
 import SectionHeading from '@/components/SectionHeading';
+import SendBtn from '@/components/SendBtn';
+import { sendEmail } from '@/actions/sendEmail';
+import { toast } from 'react-hot-toast';
 
 const contactInfo = [
     {
@@ -31,6 +34,7 @@ const contactInfo = [
 const Contact = () => {
     const xsUp = useMediaQuery('(min-width:500px)');
     const mdUp = useMediaQuery('(min-width:768px)');
+    const formRef = useRef(null)
 
     return (
         <div className=''>
@@ -158,93 +162,100 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='w-[90%] mx-auto max-w-[1600px] flex flex-col gap-10'>
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.842461342649!2d55.3723842!3d25.3094965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b60b61df7d3%3A0x87c098a04693fc50!2sK8%20tower!5e0!3m2!1sen!2s!4v1703396412059!5m2!1sen!2s"                        // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28875.717604923306!2d55.402924712370705!3d25.221268647257517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f60bde888939f%3A0x2245c09926a8f686!2sMirdif%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1703154940262!5m2!1sen!2s"
-                        width="100%"
-                        height="400"
-                        style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+            <div className='w-[100%] sm:w-[90%] mx-auto max-w-[1600px] my-10'>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.842461342649!2d55.3723842!3d25.3094965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b60b61df7d3%3A0x87c098a04693fc50!2sK8%20tower!5e0!3m2!1sen!2s!4v1703396412059!5m2!1sen!2s"                        // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28875.717604923306!2d55.402924712370705!3d25.221268647257517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f60bde888939f%3A0x2245c09926a8f686!2sMirdif%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1703154940262!5m2!1sen!2s"
+                    width="100%"
+                    height="400"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div className='w-[90%] mx-auto max-w-[1600px] flex flex-col'>
                 <div className='flex justify-center'>
                     <div className='py-6 px-4 sm:p-6 w-[40rem] max-w-3xl mx-auto bg-gray-50 shadow-lg rounded-md mb-10'>
                         <SectionHeading>Request A Callback</SectionHeading>
-                        <form className="flex flex-col gap-3"
-                        // action={async (FormData) => {
-                        //     const { data, error } = await sendEmail(FormData)
-                        //     if (data?.error) {
-                        //         toast.error(data.error.message)
-                        //         return;
-                        //     }
-                        //     toast.success("Email sent successfully")
-                        // }}
+                        <form
+                            ref={formRef}
+                            className="flex flex-col gap-3"
+                            action={async (FormData) => {
+                                const { data, error } = await sendEmail(FormData)
+                                if (data?.error) {
+                                    toast.error(data.error.message)
+                                    return;
+                                }
+                                toast.success("Email sent successfully")
+
+                                if (formRef.current) {
+                                    formRef.current.reset();
+                                }
+                            }}
                         >
                             <div className='flex flex-col gap-1'>
-                                <label className='font-semibold'>Name<span className='text-orange-500'>*</span></label>
+                                <label className='font-medium'>Name<span className='text-orange-500'>*</span></label>
                                 <input
-                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none"
-                                    name="senderEmail"
-                                    type="email"
+                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none placeholder:text-xs placeholder:text-xs"
+                                    name="senderName"
+                                    type="text"
                                     placeholder="Your Name"
                                     required
-                                    maxLength={500}
+                                    maxLength={50}
                                 />
                             </div>
                             <div className='flex flex-col gap-1'>
-                                <label className='font-semibold'>Email<span className='text-orange-500'>*</span></label>
+                                <label className='font-medium'>Email<span className='text-orange-500'>*</span></label>
                                 <input
-                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none"
+                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none placeholder:text-xs"
                                     name="senderEmail"
                                     type="email"
                                     placeholder="Your Email"
                                     required
-                                    maxLength={500}
+                                    maxLength={50}
                                 />
                             </div>
                             <div className='flex flex-col gap-1'>
-                                <label className='font-semibold'>Phone<span className='text-orange-500'>*</span></label>
+                                <label className='font-medium'>Phone<span className='text-orange-500'>*</span></label>
                                 <input
-                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none"
-                                    name="senderEmail"
-                                    type="email"
+                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none placeholder:text-xs"
+                                    name="senderPhone"
+                                    type="text"
                                     placeholder="Your Phone Number"
                                     required
-                                    maxLength={500}
+                                    maxLength={20}
                                 />
                             </div>
                             <div className='flex flex-col gap-1'>
-                                <label className='font-semibold'>Subject<span className='text-orange-500'>*</span></label>
+                                <label className='font-medium'>Subject<span className='text-orange-500'>*</span></label>
                                 <input
-                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none"
-                                    name="senderEmail"
-                                    type="email"
+                                    className="h-12 p-2 bg-white border border-black/20 rounded-sm focus:outline-none placeholder:text-xs"
+                                    name="subject"
+                                    type="text"
                                     placeholder="Your Subject"
                                     required
                                     maxLength={500}
                                 />
                             </div>
                             <div className='flex flex-col gap-1'>
-                                <label className='font-semibold'>Message</label>
+                                <label className='font-medium'>Message</label>
                                 <textarea
                                     placeholder="Your message"
                                     name="message"
-                                    className="h-52 p-2 bg-white border border-black/20 rounded-sm focus:outline-none"
+                                    className="h-52 p-2 bg-white border border-black/20 rounded-sm focus:outline-none placeholder:text-xs"
                                     required
                                     maxLength={5000}
                                 ></textarea>
                             </div>
-                            {/* <SendBtn /> */}
-                            <button
+                            <SendBtn />
+                            {/* <button
                                 type="submit"
                                 className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
                             >
                                 Submit{" "}
                                 <SendIcon className="text-base opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                            </button>
+                            </button> */}
                         </form>
                     </div>
                 </div>
