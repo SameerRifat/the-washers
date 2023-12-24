@@ -21,7 +21,7 @@ const WhatsappChat = () => {
                     <WhatsAppIcon className='text-white' fontSize='large' />
                 </Link>
             </div>
-            <div className='fixed right-7 bottom-32'>
+            <div className='fixed right-6 bottom-32'>
                 <Link
                     href={'tel:+971557924200'}
                     target='_blank'
