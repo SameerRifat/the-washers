@@ -129,8 +129,8 @@ const Contact = () => {
                                 <span>TheWashers</span>
                                 <span>Cleaning Service</span>
                                 <span>P.O Box 283252 – 149,</span>
-                                <span>Al Hamsah A Building</span>
-                                <span>Al Karama, Dubai,</span>
+                                <span>K8 Al Taawn, Sharjah</span>
+                                {/* <span>Al Karama, Dubai,</span> */}
                                 <span>United Arab Emirates.</span>
                             </div>
                         </div>
