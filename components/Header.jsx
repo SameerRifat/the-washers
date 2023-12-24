@@ -74,7 +74,7 @@ const Header = () => {
             image: "/banner1.jpg",
             image2: "/test2.jpeg",
             image3: "/mediumScreeenBanner1.jpg",
-            title: ["#Cleaning", "Services in UAE"],
+            title: ["House Cleaning", "Services"],
         },
         {
             image: "/carpetCleaningBanner.jpg",
@@ -114,7 +114,7 @@ const Header = () => {
                         <UpdateOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>Easy Booking, 7 Days a Week</h3>
+                        <h3 className='text-white font-semibold text-xl'>7 Days a Week</h3>
                         <p className='text-white'>Book our services online, available every day for your convenience</p>
                     </div>
                 </div>
