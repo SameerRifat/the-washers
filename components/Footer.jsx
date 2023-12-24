@@ -69,6 +69,7 @@ const navigation = [
 ]
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className='bg-[url(/3.png)] '>
             <div className='pt-10 bg-blue-950/40'>
@@ -174,7 +175,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='py-5 border-t border-gray-200 mt-8 text-center text-xs text-white'>
-                    Copyright © 2020 TheWashers. All right reserved
+                    Copyright © {currentYear} TheWashers. All right reserved
                 </div>
             </div>
         </footer>
