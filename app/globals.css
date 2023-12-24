@@ -2,41 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container{
-  @apply w-[90%] mx-auto
+.container {
+  @apply w-[90%] mx-auto;
 }
 
 .services .slick-slide > div {
-  @apply mx-2 md:mx-[10px] lg:mx-[15px] my-0
+  @apply mx-2 md:mx-[10px] lg:mx-[15px] my-0;
 }
 .services .slick-list {
-  @apply  -mx-[10px] md:-mx-[15px] my-0
+  @apply -mx-[10px] md:-mx-[15px] my-0;
 }
 .slick-dots {
   color: blue;
 }
 
-.primaryBtn{
+.primaryBtn {
   @apply px-3 xxs:px-4 xs:px-6 py-2 xs:py-2.5 bg-gradient-to-r from-blue-500 to-green-500 text-white font-normal xxs:font-medium xs:font-semibold text-sm xs:text-base sm:text-lg rounded-full shadow-lg  flex w-fit
-  outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600
+  outline-none hover:scale-105 focus:scale-105 active:scale-100 hover:from-blue-600 hover:to-green-600;
 }
 
-.service-highlights, .additional-benefits{
-  @apply flex flex-col gap-2
+.service-highlights,
+.additional-benefits {
+  @apply flex flex-col gap-2;
 }
-.service-highlights>h2, .additional-benefits>h2{
-  @apply font-bold text-lg
+.service-highlights > h2,
+.additional-benefits > h2 {
+  @apply font-bold text-lg;
 }
-.service-highlights>ul, .additional-benefits>ul{
-  @apply list-disc pl-7
+.service-highlights > ul,
+.additional-benefits > ul {
+  @apply list-disc pl-7;
 }
 
-.about-us-subheadinig{
-  @apply font-bold text-lg md:text-xl
+.about-us-subheadinig {
+  @apply font-bold text-lg md:text-xl;
+}
+
+
+/* WhatsApp button styling */
+.wtsapp {
+  position: fixed;
+  transition: all 0.5s ease;
+  background: #25d366;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* margin: 0; */
+  border-radius: 50px;
+  border-right: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  bottom: 30px;
+  right: 20px;
+  border: 0;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+}
+.wtsapp:focus {
+  border: none;
+  outline: none;
+}
+
+.wtsapp::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
 }

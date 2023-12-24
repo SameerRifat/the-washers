@@ -7,6 +7,7 @@ import Link from 'next/link';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -156,7 +157,7 @@ const Navbar = () => {
 
                         </div>
                         <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-3 rounded-br-3xl rounded-bl-3xl'>
-                            <LocalPhoneOutlinedIcon className='text-white' fontSize='small'/>
+                            <PhoneInTalkIcon className='text-white' fontSize='small'/>
                             <span className='text-white text-sm font-medium'>+971557924200</span>
                         </div>
                     </div>
