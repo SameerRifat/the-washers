@@ -138,7 +138,7 @@ const Services = () => {
         ]
     };
     return (
-        <div className='w-[93%] sm:w-[90%] mx-auto my-20 max-w-[1600px]'>
+        <div className='w-[93%] sm:w-[90%] mx-auto my-16 sm:my-20 max-w-[1600px]'>
 
             <div className='mb-20'>
                 <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Service Company</h2>
@@ -199,7 +199,7 @@ const Services = () => {
                                     priority={true}
                                     className='max-w-full w-full h-full sm:h-[300px] rounded-lg'
                                 />
-                                <h2 className='mt-5 text-xl font-bold text-center'>{slide.title}</h2>
+                                <h2 className='mt-5 text-xl font-bold text-center'>{slide.title} Service</h2>
 
                                 <style jsx>{`
                                         .group:hover {

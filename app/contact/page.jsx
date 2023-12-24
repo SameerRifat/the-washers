@@ -12,22 +12,26 @@ import SectionHeading from '@/components/SectionHeading';
 import SendBtn from '@/components/SendBtn';
 import { sendEmail } from '@/actions/sendEmail';
 import { toast } from 'react-hot-toast';
+import Link from 'next/link';
 
 const contactInfo = [
     {
         icon: WhatsAppIcon,
         title: 'WhatsApp',
-        subTitle: '+971 55 792 4200'
+        subTitle: '+971 55 792 4200',
+        link: 'https://wa.me/971557924200' // WhatsApp link
     },
     {
         icon: LocalPhoneOutlinedIcon,
         title: 'Call',
-        subTitle: '+971 55 792 4200'
+        subTitle: '+971 55 792 4200',
+        link: 'tel:+971557924200' // Phone call link
     },
     {
         icon: EmailOutlinedIcon,
         title: 'Email Address',
-        subTitle: 'info@thewashers.com'
+        subTitle: 'info@thewashers.com',
+        link: 'mailto:info@thewashers.com' // Email link
     }
 ]
 
@@ -103,18 +107,19 @@ const Contact = () => {
                     <div className='w-[90%] mx-auto max-w-[1600px] flex flex-wrap gap-y-10'>
                         {contactInfo.map((item, ind) => {
                             return (
-                                <div className='flex flex-col gap-2 items-center w-full sm:w-1/2 md:w-1/3'>
-                                    <span className='bg-gradient-to-r from-blue-600 to-green-500 mx-auto p-1 rounded-full'>
-                                        <span className='border-2 border-white p-1 rounded-full w-14 h-14 flex justify-center items-center'>
-                                            <item.icon
-                                                // className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500'
-                                                className='text-white'
-                                                fontSize='large'
-                                            />
-                                        </span>
-                                    </span>
-                                    <h3 className='uppercase font-bold text-lg'>{item.title}</h3>
-                                    <p>{item.subTitle}</p>
+                                <div className='flex flex-col gap-2 items-center w-full sm:w-1/2 md:w-1/3' key={ind}>
+                                    <Link href={item.link} target="_blank" rel="noopener noreferrer" className='flex flex-col items-center gap-2'>
+                                        <div className='bg-gradient-to-r from-blue-600 to-green-500 mx-auto p-1 rounded-full w-fit'>
+                                            <div className='border-2 border-white p-1 rounded-full w-14 h-14 flex justify-center items-center'>
+                                                <item.icon
+                                                    className='text-white'
+                                                    fontSize='large'
+                                                />
+                                            </div>
+                                        </div>
+                                        <h3 className='uppercase font-bold text-lg'>{item.title}</h3>
+                                        <p>{item.subTitle}</p>
+                                    </Link>
                                 </div>
                             )
                         })}

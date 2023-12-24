@@ -14,8 +14,8 @@ import { useMediaQuery } from 'react-responsive';
 const SlideContent = ({ image, image2, title, image3 }) => {
     const [forceRerender, setForceRerender] = useState(false);
 
-    const isSmallScreen = useMediaQuery({ maxWidth: 580 }); 
-    const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 }); 
+    const isSmallScreen = useMediaQuery({ maxWidth: 580 });
+    const isMediumScreen = useMediaQuery({ minWidth: 581, maxWidth: 1280 });
 
     useEffect(() => {
         setForceRerender(prevState => !prevState);
@@ -114,8 +114,8 @@ const Header = () => {
                         <UpdateOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>24 / 7 Booking</h3>
-                        <p className='text-white'>Book our service online 24/7 available</p>
+                        <h3 className='text-white font-semibold text-xl'>Easy Booking, 7 Days a Week</h3>
+                        <p className='text-white'>Book our services online, available every day for your convenience</p>
                     </div>
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 bg-gradient-to-b from-[#037981] to-[#04aab6] flex-[0.8] max-w-[580px] mx-auto relative'>
@@ -123,8 +123,8 @@ const Header = () => {
                         <HomeWorkOutlinedIcon className='w-12 h-12 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>Services in UAE</h3>
-                        <p className='text-white'>Commercial & Residential Building Cleaning in Dubai, Sharjah & Ajman </p>
+                        <h3 className='text-white font-semibold text-xl'>Our Services Areas</h3>
+                        <p className='text-white'>We provide cleaning services in Dubai, Sharjah, and Ajman</p>
                     </div>
                     <div className='w-full h-1 lg:h-2 absolute bottom-0 left-0 bg-gradient-to-r from-blue-600 to-green-500'>
 
@@ -136,10 +136,11 @@ const Header = () => {
                     </div>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-white font-semibold text-xl'>Get Free Quote</h3>
-                        <p className='text-white'>WhatsApp or call us to get free quote about our service</p>
+                        <p className='text-white'>WhatsApp or call us to get a free quote for our services</p>
                     </div>
                 </div>
             </div>
+
         </>
     );
 };

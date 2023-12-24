@@ -26,8 +26,8 @@ const navigation = [
         children: [
             {
                 id: 1,
-                title: 'Mattress Cleaning',
-                href: '/services/Mattress-Cleaning',
+                title: 'Sofa Cleaning',
+                href: '/services/Sofa-Cleaning',
             },
             {
                 id: 2,
@@ -61,8 +61,8 @@ const navigation = [
             },
             {
                 id: 8,
-                title: 'Sofa Cleaning',
-                href: '/services/Sofa-Cleaning',
+                title: 'Mattress Cleaning',
+                href: '/services/Mattress-Cleaning',
             },
             {
                 id: 9,
@@ -155,9 +155,9 @@ const Navbar = () => {
                             })}
 
                         </div>
-                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-4 rounded-br-3xl rounded-bl-3xl'>
-                            <LocalPhoneOutlinedIcon className='text-white' />
-                            <span className='text-white text-lg font-extrabold'>800 939</span>
+                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-3 rounded-br-3xl rounded-bl-3xl'>
+                            <LocalPhoneOutlinedIcon className='text-white' fontSize='small'/>
+                            <span className='text-white text-sm font-medium'>+971557924200</span>
                         </div>
                     </div>
                     <button onClick={() => setOpen(true)} className='md:hidden text-white'>
@@ -232,7 +232,7 @@ const Navbar = () => {
                                         <Link key={navLink.name}
                                             href={navLink.href}
                                             onClick={() => setOpen(false)}
-                                            className='text-black w-fit px-2 py-1 font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all'
+                                            className='text-black px-2 py-1 font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all w-full hover:bg-gray-100'
                                         >
                                             {navLink.name}
                                         </Link>

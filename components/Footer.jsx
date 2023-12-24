@@ -19,8 +19,8 @@ const navigation = [
         children: [
             {
                 id: 1,
-                title: 'Mattress Cleaning',
-                href: '/services/Mattress-Cleaning',
+                title: 'Sofa Cleaning',
+                href: '/services/Sofa-Cleaning',
             },
             {
                 id: 2,
@@ -54,8 +54,8 @@ const navigation = [
             },
             {
                 id: 8,
-                title: 'Sofa Cleaning',
-                href: '/services/Sofa-Cleaning',
+                title: 'Mattress Cleaning',
+                href: '/services/Mattress-Cleaning',
             },
             {
                 id: 9,
@@ -72,7 +72,7 @@ const Footer = () => {
     return (
         <footer className='bg-[url(/3.png)] '>
             <div className='pt-10 bg-blue-950/40'>
-                <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-0 text-white'>
+                <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 text-white'>
                     <div className=' order-3 sm:order-1'>
                         <h2 className='font-bold text-xl sm:text-2xl text-white mb-2'>Information</h2>
                         <div className='flex gap-2 pb-3 text-center'>
