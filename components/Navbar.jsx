@@ -195,13 +195,13 @@ const Navbar = () => {
                                             {({ open }) => (
                                                 <>
                                                     <h3 className="-mx-2 -my-3 flow-root">
-                                                        <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500">
-                                                            <span className="font-medium text-gray-900">Services</span>
+                                                        <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-">
+                                                            <span className="font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-blue-500 hover:to-green-500 transition-all">Services</span>
                                                             <span className="ml-6 flex items-center">
                                                                 {open ? (
-                                                                    <RemoveIcon className="h-5 w-5" aria-hidden="true" />
+                                                                    <RemoveIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
                                                                 ) : (
-                                                                    <AddIcon className="h-5 w-5" aria-hidden="true" />
+                                                                    <AddIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
                                                                 )}
                                                             </span>
                                                         </Disclosure.Button>
