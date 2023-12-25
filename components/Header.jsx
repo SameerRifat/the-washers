@@ -71,20 +71,20 @@ const Header = () => {
 
     const slides = [
         {
-            image: "/banner1.jpg",
-            image2: "/test2.jpeg",
+            image: "/sofaCleaningBanner.jpg",
+            image2: "/mediumScreeenBanner4.jpg",
             image3: "/mediumScreeenBanner1.jpg",
-            title: ["House Cleaning", "Services"],
+            title: ["Sofa Cleaning", "Services"],
         },
         {
             image: "/carpetCleaningBanner.jpg",
-            image2: "/test3.jpeg",
+            image2: "/mediumScreeenBanner3.jpg",
             image3: "/mediumScreeenBanner2.jpg",
             title: ["Fast", "Reliable & Efficient", "Services"],
         },
         {
             image: "/rugsCleaningBanner2.jpg",
-            image2: "/test4.jpeg",
+            image2: "/sofaCleaningComarison2.jpg",
             image3: "/mediumScreeenBanner3.jpg",
             title: ["Get A Free Quote", "Need a help?", "Just Click Below"],
         },
