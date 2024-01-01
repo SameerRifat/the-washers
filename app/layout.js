@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '#1 Sofa Cleaning Service in Dubai',
+  title: 'Sofa Cleaning Service in Dubai',
   description: 'TheWashers Sofa Cleaning Service in Dubai',
 }
 
