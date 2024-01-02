@@ -58,6 +58,9 @@ const SlideContent = ({ image, image2, title, image3 }) => {
 
 
 const Header = () => {
+    const isSmallScreen = useMediaQuery({ maxWidth: 350 });
+    const isMediumScreen = useMediaQuery({ minWidth: 350, maxWidth: 1280 });
+
     const settings = {
         infinite: true,
         slidesToShow: 1,
@@ -111,7 +114,7 @@ const Header = () => {
             <div className='flex flex-col lg:flex-row bg-gradient-to-r lg:bg-none from-blue-500 to-green-400'>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-blue-500 lg:to-green-400 lg:flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
                     <div className='text-4xl'>
-                        <UpdateOutlinedIcon className='w-14 h-14 text-white' />
+                        <UpdateOutlinedIcon className=' text-white' style={isSmallScreen ? {fontSize: '45px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-white font-semibold text-xl'>7 Days a Week</h3>
@@ -120,7 +123,7 @@ const Header = () => {
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 bg-gradient-to-b from-[#037981] to-[#04aab6] flex-[0.8] max-w-[580px] mx-auto relative'>
                     <div className='text-4xl'>
-                        <HomeWorkOutlinedIcon className='w-14 h-14 text-white' />
+                        <HomeWorkOutlinedIcon className=' text-white' style={isSmallScreen ? {fontSize: '45px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-white font-semibold text-xl'>Our Services Areas</h3>
@@ -132,7 +135,7 @@ const Header = () => {
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-green-400 lg:to-blue-500 flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
                     <div className='text-4xl'>
-                        <WhatsAppIcon className='w-14 h-14 text-white' />
+                        <WhatsAppIcon className=' text-white' style={isSmallScreen ? {fontSize: '45px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-white font-semibold text-xl'>Get Free Quote</h3>
