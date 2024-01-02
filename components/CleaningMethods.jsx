@@ -25,6 +25,12 @@ const methods = [
 
 const CleaningMethods = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+    const [forceRerender, setForceRerender] = useState(false);
+
+    useEffect(() => {
+        setForceRerender(prevState => !prevState);
+    }, [isSmallScreen]);
+
     return (
         <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-10'>
             <div className='w-[90%] mx-auto'>
@@ -35,7 +41,7 @@ const CleaningMethods = () => {
                 <p className='text-sm xs:text-base mt-2'>
                     You should clean your sofas on regular basis as it is the central place Where all family resides most of the time
                 </p>
-                <div className='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-12'>
+                <div className='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-12' key={forceRerender}>
                     {methods.map((method, ind) => {
                         return (
                             <div key={ind} className='flex items-center gap-5'>
