@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import AutorenewIcon from '@mui/icons-material/Autorenew';
+import { useMediaQuery } from 'react-responsive';
 
 const methods = [
     {
@@ -21,6 +24,7 @@ const methods = [
 ]
 
 const CleaningMethods = () => {
+    const isSmallScreen = useMediaQuery({ maxWidth: 640 });
     return (
         <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-10'>
             <div className='w-[90%] mx-auto'>
@@ -35,8 +39,8 @@ const CleaningMethods = () => {
                     {methods.map((method, ind) => {
                         return (
                             <div key={ind} className='flex items-center gap-5'>
-                                <div className='bg-white p-3 xs:p-4 rounded-lg shadow-sm'>
-                                    <AutorenewIcon className='w-12 h-12 text-green-500' />
+                                <div className='bg-white p-3 xs:p-3 rounded-lg shadow-sm'>
+                                    <AutorenewIcon className=' text-green-500' style={isSmallScreen ? {fontSize: '30px'} : {fontSize: '50px'}}/>
                                 </div>
                                 <div>
                                     <h3 className='font-semibold xs:font-bold text-xl xs:text-2xl'>{method.title}</h3>
