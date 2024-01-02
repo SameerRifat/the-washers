@@ -19,10 +19,11 @@ const About = () => {
 
     return (
         <>
-            <div key={forceRerender} className='w-full h-[20vh] xxxs:h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[45vh] xl:h-[50vh] relative'>
+            <div key={forceRerender} className='w-full h-[30vh] xxxs:h-[35vh] sm:h-[40vh] lg:h-[45vh] xl:h-[55vh] relative'>
                 <Image
                     // src={service.banner1}
-                    src={isSmallScreen ? '/aboutUsBanner3.jpg' : (isMediumScreen ? '/aboutUsBanner2.jpg' : '/aboutUsBanner1.jpg')}
+                    src={isSmallScreen ? '/aboutUsBanner3.jpg' : '/aboutUsBanner1.jpg'}
+                    // src={isSmallScreen ? '/aboutUsBanner3.jpg' : (isMediumScreen ? '/aboutUsBanner2.jpg' : '/aboutUsBanner1.jpg')}
                     alt="banner"
                     width={1200}
                     height={1000}
@@ -30,6 +31,14 @@ const About = () => {
                     priority={true}
                     className='max-w-full w-full h-full'
                 />
+                <div className=' absolute left-0 top-0 h-full w-full flex justify-center items-center'>
+                    <div className=' w-fit mx-auto flex flex-col justify-center gap-1 md:gap-2 text-white mt-[70px] p-3 bg-black/20'>
+                        <h2 className={`xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xxs:text-4xl sm:text-5xl`}>
+                            About Us
+                        </h2>
+                        <div className='w-20 xxs:w-24 lg:w-28 h-1 lg:h-1 bg-gradient-to-r from-blue-600 to-green-600 mx-auto rounded-full'></div>
+                    </div>
+                </div>
             </div>
 
             <div className='w-[90%] max-w-[1600px] mx-auto my-14'>

@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-.container {
-  @apply w-[90%] mx-auto;
+.shared_container{
+  @apply w-[93%] xxs:w-[90%] mx-auto max-w-[1600px]
 }
 
 .services .slick-slide > div {
