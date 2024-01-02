@@ -32,7 +32,7 @@ const About = () => {
                     className='max-w-full w-full h-full'
                 />
                 <div className=' absolute left-0 top-0 h-full w-full flex justify-center items-center'>
-                    <div className=' w-fit mx-auto flex flex-col justify-center gap-1 md:gap-2 text-white mt-[70px] p-3 bg-black/20'>
+                    <div className=' w-fit mx-auto flex flex-col justify-center gap-1 md:gap-2 text-white mt-[70px] p-3 bg-black/20 rounded-md'>
                         <h2 className={`xxxs:font-bold w-350:font-extrabold text-xl xxxs:text-2xl w-350:text-3xl xxs:text-4xl sm:text-5xl`}>
                             About Us
                         </h2>
