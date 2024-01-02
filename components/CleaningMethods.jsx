@@ -40,7 +40,7 @@ const CleaningMethods = () => {
                         return (
                             <div key={ind} className='flex items-center gap-5'>
                                 <div className='bg-white p-3 xs:p-3 rounded-lg shadow-sm'>
-                                    <AutorenewIcon className=' text-green-500' style={isSmallScreen ? {fontSize: '20px'} : {fontSize: '50px'}}/>
+                                    <AutorenewIcon className=' text-green-500' style={isSmallScreen ? {fontSize: '18px'} : {fontSize: '50px'}}/>
                                 </div>
                                 <div>
                                     <h3 className='font-semibold xs:font-bold text-xl xs:text-2xl'>{method.title}</h3>
