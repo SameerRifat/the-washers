@@ -138,9 +138,9 @@ const Contact = () => {
                                 <span>TheWashers</span>
                                 <span>Cleaning Service</span>
                                 {/* <span>P.O Box 283252 – 149,</span> */}
-                                <span>Tower B - New Al Taawan Rd</span>
+                                <span>Al Taawun St - Al Mamzar -</span>
                                 {/* <span>Al Karama, Dubai,</span> */}
-                                <span>Sharjah - United Arab Emirates.</span>
+                                <span>Sharjah - United Arab Emirates</span>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@ const Contact = () => {
 
             <div className='w-[100%] sm:w-[90%] mx-auto max-w-[1600px] my-10'>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.003889845189!2d55.396579599999995!3d25.3376505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b007500145f%3A0x8977c523f157ebeb!2sThe%20Cleaners!5e0!3m2!1sen!2s!4v1704172992482!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14427.592491215973!2d55.3692564!3d25.3076267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b0064b6a1d5%3A0x1822fee99499159!2sThe%20Washers!5e0!3m2!1sen!2s!4v1704221685671!5m2!1sen!2s"
                     width="100%"
                     height="400"
                     style={{ border: 0 }}

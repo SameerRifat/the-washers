@@ -82,8 +82,8 @@ const Footer = () => {
                             </div>
                             <div className='flex flex-col gap-1 text-start'>
                                 <h3 className='font-medium sm:font-semibold sm:text-lg'>Head Office</h3>
-                                <span className='text-sm'>Tower B - New Al Taawan Rd,</span>
-                                <span className='text-sm'>Sharjah, United Arab Emirates.</span>
+                                <span className='text-sm'>Al Taawun St - Al Mamzar -</span>
+                                <span className='text-sm'>Sharjah - United Arab Emirates</span>
                             </div>
                         </div>
                         <div className='flex gap-2 pb-3'>
