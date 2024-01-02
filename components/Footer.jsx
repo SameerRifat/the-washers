@@ -82,8 +82,8 @@ const Footer = () => {
                             </div>
                             <div className='flex flex-col gap-1 text-start'>
                                 <h3 className='font-medium sm:font-semibold sm:text-lg'>Head Office</h3>
-                                <span className='text-sm'>K8 Tower Al Taawn,</span>
-                                <span className='text-sm'>Sharjah, UAE</span>
+                                <span className='text-sm'>Tower B - New Al Taawan Rd,</span>
+                                <span className='text-sm'>Sharjah, United Arab Emirates.</span>
                             </div>
                         </div>
                         <div className='flex gap-2 pb-3'>
@@ -92,7 +92,15 @@ const Footer = () => {
                             </div>
                             <div className='flex flex-col gap-1'>
                                 <h3 className='font-medium sm:font-semibold sm:text-lg'>Phone Number</h3>
-                                <span className='text-sm'>+971 55 792 4200</span>
+                                {/* <span className='text-sm'>+971 55 792 4200</span> */}
+                                <Link
+                                    href='tel:+971557924200'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='text-sm'
+                                >
+                                    +971 55 792 4200
+                                </Link>
                             </div>
                         </div>
                         <div className='flex gap-2'>
@@ -101,7 +109,15 @@ const Footer = () => {
                             </div>
                             <div className='flex flex-col gap-1'>
                                 <h3 className='font-medium sm:font-semibold sm:text-lg'>Email Address</h3>
-                                <span className='text-sm'>info@thewashers.com</span>
+                                <Link
+                                    href='mailto:info@thewashersuae.com'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='text-sm'
+                                >
+                                    info@thewashersuae.com
+                                </Link>
+                                {/* <span className='text-sm'>info@thewashersuae.com</span> */}
                             </div>
                         </div>
                     </div>

@@ -30,8 +30,8 @@ const contactInfo = [
     {
         icon: EmailOutlinedIcon,
         title: 'Email Address',
-        subTitle: 'info@thewashers.com',
-        link: 'mailto:info@thewashers.com' // Email link
+        subTitle: 'info@thewashersuae.com',
+        link: 'mailto:info@thewashersuae.com' // Email link
     }
 ]
 
@@ -137,33 +137,13 @@ const Contact = () => {
                             <div className='flex flex-col gap-1 items-center mt-2'>
                                 <span>TheWashers</span>
                                 <span>Cleaning Service</span>
-                                <span>P.O Box 283252 – 149,</span>
+                                {/* <span>P.O Box 283252 – 149,</span> */}
                                 <span>Tower B - New Al Taawan Rd</span>
                                 {/* <span>Al Karama, Dubai,</span> */}
                                 <span>Sharjah - United Arab Emirates.</span>
                             </div>
                         </div>
                     </div>
-                    {/* <div className='text-center mt-10'>
-                        <div className='inline-block p-1  bg-gradient-to-r from-blue-600 to-green-500 rounded-full'>
-                            <span className='border-2 border-white p-1 rounded-full w-14 h-14 flex justify-center items-center'>
-                                <FmdGoodIcon
-                                    // className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500'
-                                    className='text-white'
-                                    fontSize='large'
-                                />
-                            </span>
-                        </div>
-                        <h3 className='uppercase font-bold text-lg mt-3'>Our Location</h3>
-                        <div className='flex flex-col gap-1 items-center mt-2'>
-                            <span>TheWashers</span>
-                            <span>Cleaning Service</span>
-                            <span>P.O Box 283252 – 149,</span>
-                            <span>Al Hamsah A Building</span>
-                            <span>Al Karama, Dubai,</span>
-                            <span>United Arab Emirates.</span>
-                        </div>
-                    </div> */}
                 </div>
             </div>
 
@@ -178,7 +158,7 @@ const Contact = () => {
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
+            {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque temporibus nesciunt enim libero praesentium illum? */}
             <div className='w-[90%] mx-auto max-w-[1600px] flex flex-col'>
                 <div className='flex justify-center'>
                     <div className='py-6 px-4 sm:p-6 w-[40rem] max-w-3xl mx-auto bg-gray-50 shadow-lg rounded-md mb-10'>
