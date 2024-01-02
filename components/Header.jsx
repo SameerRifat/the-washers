@@ -119,7 +119,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 bg-gradient-to-b from-[#037981] to-[#04aab6] flex-[0.8] max-w-[580px] mx-auto relative'>
-                    <div className='text-4xl w-40'>
+                    <div className='text-4xl'>
                         <HomeWorkOutlinedIcon className='w-14 h-14 text-white' />
                     </div>
                     <div className='flex flex-col gap-2'>
