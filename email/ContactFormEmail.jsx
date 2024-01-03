@@ -23,7 +23,7 @@ const ContactFormEmail = ({ message, senderEmail, senderName, senderPhone, subje
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight font-semibold text-base">
-                New message from TheWasers site
+                New message from TheWashers site
               </Heading>
               <Text>
                 <h3 className="text-base font-medium"><span className="font-semibold">Subject: </span> {subject}</h3>
