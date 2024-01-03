@@ -32,7 +32,7 @@ const CleaningMethods = () => {
     }, [isSmallScreen]);
 
     return (
-        <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-10'>
+        <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-14'>
             <div className='w-[90%] mx-auto'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl'>
                     <span className='font-semibold'>Professional {" "}</span>
@@ -46,7 +46,7 @@ const CleaningMethods = () => {
                         return (
                             <div key={ind} className='flex items-center gap-5'>
                                 <div className='bg-white p-3 xs:p-3 rounded-lg shadow-sm'>
-                                    <AutorenewIcon className=' text-green-500' style={isSmallScreen ? {fontSize: '35px'} : {fontSize: '50px'}}/>
+                                    <AutorenewIcon className=' text-green-500' style={isSmallScreen ? {fontSize: '35px'} : {fontSize: '45px'}}/>
                                 </div>
                                 <div>
                                     <h3 className='font-semibold xs:font-bold text-xl xs:text-2xl'>{method.title}</h3>

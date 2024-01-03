@@ -165,7 +165,7 @@ const Services = () => {
                                     <Image
                                         key={slide.image}
                                         src={slide.image}
-                                        alt="service image"
+                                        alt="Sofa cleaning service image"
                                         width={350}
                                         height={350}
                                         quality={95}
@@ -192,7 +192,7 @@ const Services = () => {
                                 <Image
                                     key={slide.title}
                                     src={slide.imgSrc}
-                                    alt="service image"
+                                    alt={`${slide.title} Service`}
                                     width={350}
                                     height={350}
                                     quality={95}

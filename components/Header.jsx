@@ -27,7 +27,7 @@ const SlideContent = ({ image, image2, title, image3 }) => {
             <Image
                 // src={isSmallScreen ? image2 : image}
                 src={isSmallScreen ? image2 : (isMediumScreen ? image3 : image)}
-                alt="banner"
+                alt="cleaning service banner"
                 width={1200}
                 height={1000}
                 quality={95}

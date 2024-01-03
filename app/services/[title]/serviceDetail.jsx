@@ -442,7 +442,7 @@ const ServiceDetail = ({ params }) => {
     return (
         <>
             <Head>
-                <title>{`${service.title} Service - TheWashers`}</title>
+                <title>{`${service.title} Service - TheWashers UAE`}</title>
                 <meta name="description" content="Professional cleaning service for your home or office. Book now for quality cleaning solutions." />
                 {/* Add other meta tags as needed */}
             </Head>
@@ -450,7 +450,7 @@ const ServiceDetail = ({ params }) => {
                 <Image
                     // src={service.banner1}
                     src={isSmallScreen ? service.banner2 : service.banner1}
-                    alt="banner"
+                    alt={`${service.title} service image`}
                     width={1200}
                     height={1000}
                     quality={95}
@@ -495,7 +495,7 @@ const ServiceDetail = ({ params }) => {
                         <div className=''>
                             <Image
                                 src={service.serviceDetailImg}
-                                alt="service image"
+                                alt={`${service.title} service image`}
                                 width={350}
                                 height={350}
                                 quality={95}
