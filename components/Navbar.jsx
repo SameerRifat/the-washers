@@ -156,7 +156,7 @@ const Navbar = () => {
                             })}
 
                         </div>
-                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 flex items-center gap-1 px-3 rounded-br-3xl rounded-bl-3xl'>
+                        <div className='bg-gradient-to-b from-blue-500 to-green-500 h-[60px] ml-7 hidden lg:flex items-center gap-1 px-3 rounded-br-3xl rounded-bl-3xl'>
                             <PhoneInTalkIcon className='text-white' fontSize='small'/>
                             <span className='text-white text-sm font-medium'>+971557924200</span>
                         </div>

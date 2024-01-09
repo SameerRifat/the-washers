@@ -141,40 +141,105 @@ const Services = () => {
         <div className='w-[93%] sm:w-[90%] mx-auto my-16 sm:my-20 max-w-[1600px]'>
 
             <div className='mb-20'>
-                <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Service Company</h2>
-                <p>Elevate Your Living Space with TheWashers, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
+                <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Services</h2>
+                <p>Elevate Your Living Space with TheWashersuae, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
-                            Cleaning sofas is a diverse task, requiring a tailored approach based on the material used in their manufacturing. Our specialized team utilizes vacuum cleaners, steam machines, and duster cloths to ensure a thorough cleaning process, addressing every nook and cranny. We make informed decisions on the most suitable cleaning method, considering factors like fabric type. Whether it's shampooing or dry cleaning services, our goal is to deliver a comprehensive cleaning service that preserves your sofa's quality and appearance.
+                            At Thewashersuae we are commited to delivering a Deeper Clean with our Furniture and Sofa Cleaning Services in Dubai Sharjah Ajman.
                         </p>
-                        <p className='mt-5 leading-7'>
-                            Our goal is to deliver a comprehensive sofa cleaning service that goes beyond surface cleaning, leaving your furniture looking and feeling rejuvenated.
+                        <p className='mt-2 leading-7'>
+                            TheWasheruae Sofa Cleaning Services provide a healthier Clean for your Furnture.
+                            With our approch, you can remove deep-seated stains, pet hair and dirt from your furniture without using soapy detergents or harsh chemicals.
+                            instead we rely on certified cleaning chemicals and products for 99% deeper clean and healthier home.
                         </p>
-                        {/* <p className='leading-7'>
-                            The cleaning procedure will vary for each variety of sofa depending upon the type of material used in the process of manufacturing sofas. We have with us specially trained sofa cleaning professionals to intensely clean the complicated nooks and corners of sofas. Mostly, Our team uses vacuum cleaners, steam machines and duster cloth as sofa cleaning techniques.
+                        <ol className='mt-2 leading-7 list-decimal pl-5'>
+                            <li>Book Your Sofa Cleaning Services</li>
+                            <li>Our Expert will come to Your Place </li>
+                            <li>They will Apply the most suitable Sofa Cleaning Method</li>
+                            <li>Enjoy Your Refreshed Sofa And Healthier Home</li>
+                        </ol>
+                        <p className='mt-2 leading-7'>
+                            Water with Chemicals Extraction and Antivral Sofa Sanitisation kill 99% of dangrous viruses and becteria your sofa will look brand new
                         </p>
-                        <p className='mt-5 leading-7'>
-                            Based on the type of furniture, we will decide what type of cleaning method should be employed whether shampooing or dry cleaning services.
-                        </p> */}
+                        <ol className='mt-2 leading-7 list-decimal pl-5'>
+                            <li>Removing common domestic stains</li>
+                            <li>Eliminating unpleasent odours </li>
+                            <li>free fabric protection for longer lasting results</li>
+                            <li>Done by Expert sofa cleaning Team</li>
+                        </ol>
                     </div>
                     <div className='w-full overflow-hidden'>
-                        <Slider {...settings} className='h-full w-full'>
-                            {slides.map((slide, index) => {
-                                return (
-                                    <Image
-                                        key={slide.image}
-                                        src={slide.image}
-                                        alt="Sofa cleaning service image"
-                                        width={350}
-                                        height={350}
-                                        quality={95}
-                                        priority={true}
-                                        className='max-w-full w-full h-full sm:h-[350px] rounded-lg shadow-sm'
-                                    />
-                                )
-                            })}
-                        </Slider>
+                        <Image
+                            src="/sofa6.jpg"
+                            alt="Sofa cleaning service image"
+                            width={350}
+                            height={350}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-full h-full sm:h-[350px] rounded-lg shadow-sm'
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className='mb-20'>
+                <h2 className='font-extrabold text-3xl mb-2'>Rug Cleaning Services</h2>
+                <p>Keep your favourite rugs in pristine condition with a regular clean from a Thewashersuae Expert.</p>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
+                    <div className='w-full my-auto'>
+                        <p className='leading-7'>
+                            All rugs deserve a proper clean once in a while, as even with regular vacuuming and the occasional shampoo, they will wear down and become stained if not cleaned and protected professionally.
+                            Households with young children and pets will find their rug needs a clean more often, and as with all kinds of cleaning there are important things to consider, the rug fibres, its age and conditions, these determine the best strategy for a successful clean.
+                        </p>
+                        <p className='mt-2 sm:mt-3 leading-7'>
+                            Thewashersuae Expert pride themselves on the level of customer service they offer, assessing the situation to then deliver the best results.
+                        </p>
+                        <p className='mt-2 sm:mt-3 leading-7'>
+                            As well as rug cleaning services Thewashersuae also offer protection services. Protection often works out as a cost-effective solution to furniture care, as the application of the correct protective layer will help prevent stains and dirt building up over time.
+                        </p>
+                    </div>
+                    <div className='w-full overflow-hidden'>
+                        <Image
+                            src='/mediumScreeenBanner2.jpg'
+                            alt="Sofa cleaning service image"
+                            width={350}
+                            height={350}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm'
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className='mb-20'>
+                <h2 className='font-extrabold text-3xl mb-2'>Mattress Cleaning Services</h2>
+                <p>Elevate Your Sleep Experience: Thewashersuae Expert Mattress Cleaning Services for a Fresher, Healthier Bed.</p>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
+                    <div className='w-full my-auto'>
+                        <p className='leading-7'>
+                            Get a better sleep wth a mattress Professionally cleaned by Thewashersuae Team
+                            a good mattress can be significant investment so this means you want it to last as long possible, staying fresh as the day you bought it.
+                            since you use your mattress everyday, it can be one of the least clean items in house.
+                        </p>
+                        <p className='mt-2 sm:mt-3 leading-7'>
+                            Dead skin cells, dust and sweat all find their way into the fibers of the mattress and, without being cleand, will stay there.
+                            Thewashersuae believe a clean Mattress is essential part of a happy and comfortable home.
+                        </p>
+                        <p className='mt-2 sm:mt-3 leading-7'>
+                            Twice a year is the standard recommendation when it comes to how often you should clean your mattress.
+                            Mattress becoming more advanced and expensive it is not alwayes easy to give a mattress an effective clean using normal household equipments and methods For That Thewashersuae is here for help you.
+                        </p>
+                    </div>
+                    <div className='w-full overflow-hidden'>
+                        <Image
+                            src='/mattress1.jpg'
+                            alt="Sofa cleaning service image"
+                            width={350}
+                            height={350}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm'
+                        />
                     </div>
                 </div>
             </div>
@@ -207,61 +272,10 @@ const Services = () => {
                                         }
                                 `}</style>
                             </Link>
-                            // <div className='p-3 my-3 rounded-lg shadow-lg border border-gray-500/10 hover:scale-[1.03] transition-all cursor-pointer hover:shadow-blue-500'>
-                            //     <Image
-                            //         key={slide.title}
-                            //         src={slide.imgSrc}
-                            //         alt="service image"
-                            //         width={350}
-                            //         height={350}
-                            //         quality={95}
-                            //         priority={true}
-                            //         className='max-w-full w-full h-full sm:h-[300px] rounded-lg '
-                            //     />
-                            //     <h2 className='mt-5 text-xl font-bold text-center'>{slide.title}</h2>
-                            // </div>
                         )
                     })}
                 </Slider>
             </div>
-            {/* <div className='mt-10'>
-                <div className='grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-5 lg:gap-7'>
-                    {services.map((service, ind) => {
-                        return (
-                            <div key={ind} className='border border-gray-300 flex flex-col gap-3 rounded-lg p-2 xs:p-3 shadow-sm cursor-pointer hover:bg-gray-50 hover:scale-105 transition-all'>
-                                <Image
-                                    src={service.imgSrc}
-                                    alt="Service image"
-                                    width={200}
-                                    height={200}
-                                    quality={95}
-                                    priority={true}
-                                    className='max-w-[400] w-full h-full object-contain rounded-lg'
-                                />
-                                <div>
-                                    <h4 className='font-semibold text-xl'>{service.title}</h4>
-                                    <ul className='list-disc pl-5'>
-                                        <li className='mb-1'>Dry vacuuming to remove crumbs & dirt particles</li>
-                                        <li>Wet shampooing & vacuuming to treat tough stains and spillages</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </div> */}
-            {/* <video
-                    width="100%"
-                    height="100%"
-                    controls
-                    autoPlay
-                // poster="/echoCartPoster.png"
-                // style={{ maxWidth: '100%', width: '100%', height: 'auto', display: 'block', margin: 'auto' }}
-                >
-                    <source src="/vid.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div> */}
         </div>
     )
 }
