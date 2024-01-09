@@ -150,7 +150,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-green-400 lg:to-blue-500 flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
-                    <div className='w-28 sm:w-32'>
+                    <div className='w-32 sm:w-36'>
                         <Image
                             src='/mattressIcon6.png'
                             alt="cleaning service icon"
@@ -158,7 +158,7 @@ const Header = () => {
                             height={60}
                             quality={95}
                             priority={true}
-                            className='max-w-full w-24 sm:w-28 h-auto'
+                            className='max-w-full w-28 sm:w-32 h-auto'
                         />
                     </div>
                     <div className='flex flex-col gap-2'>
