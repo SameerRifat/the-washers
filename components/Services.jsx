@@ -140,10 +140,10 @@ const Services = () => {
     return (
         <div className='w-[93%] sm:w-[90%] mx-auto my-16 sm:my-20 max-w-[1600px]'>
 
-            <div className='mb-20'>
-                <h2 className='font-extrabold text-3xl mb-2'>Sofa Cleaning Services</h2>
+            <div className='mb-16 lg:mb-20'>
+                <h2 className='font-bold sm:font-extrabold text-3xl mb-2'>Sofa Cleaning Services</h2>
                 <p>Elevate Your Living Space with TheWashersuae, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
                             At Thewashersuae we are commited to delivering a Deeper Clean with our Furniture and Sofa Cleaning Services in Dubai Sharjah Ajman.
@@ -182,10 +182,10 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='mb-20'>
-                <h2 className='font-extrabold text-3xl mb-2'>Rug Cleaning Services</h2>
+            <div className='mb-16 lg:mb-20'>
+                <h2 className='font-bold sm:font-extrabold text-3xl mb-2'>Rugs/Mattress Cleaning Services</h2>
                 <p>Keep your favourite rugs in pristine condition with a regular clean from a Thewashersuae Expert.</p>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
                             All rugs deserve a proper clean once in a while, as even with regular vacuuming and the occasional shampoo, they will wear down and become stained if not cleaned and protected professionally.
@@ -201,7 +201,7 @@ const Services = () => {
                     <div className='w-full overflow-hidden'>
                         <Image
                             src='/mediumScreeenBanner2.jpg'
-                            alt="Sofa cleaning service image"
+                            alt="Rugs cleaning service image"
                             width={350}
                             height={350}
                             quality={95}
@@ -211,10 +211,10 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='mb-20'>
-                <h2 className='font-extrabold text-3xl mb-2'>Mattress Cleaning Services</h2>
+            <div className='mb-16 lg:mb-20'>
+                <h2 className='font-bold sm:font-extrabold text-3xl mb-2'>Mattress Cleaning Services</h2>
                 <p>Elevate Your Sleep Experience: Thewashersuae Expert Mattress Cleaning Services for a Fresher, Healthier Bed.</p>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5 mb-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
                             Get a better sleep wth a mattress Professionally cleaned by Thewashersuae Team
@@ -233,7 +233,7 @@ const Services = () => {
                     <div className='w-full overflow-hidden'>
                         <Image
                             src='/mattress1.jpg'
-                            alt="Sofa cleaning service image"
+                            alt="Mattress cleaning service image"
                             width={350}
                             height={350}
                             quality={95}
