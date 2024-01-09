@@ -142,19 +142,19 @@ const Services = () => {
 
             <div className='mb-16 lg:mb-20'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl mb-2'>Sofa Cleaning Services</h2>
-                <p>Elevate Your Living Space with TheWashersuae, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
+                <p>Elevate Your Living Space with <b className='font-semibold'>Thewashersuae</b>, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
-                            At Thewashersuae we are commited to delivering a Deeper Clean with our Furniture and Sofa Cleaning Services in Dubai Sharjah Ajman.
+                            At <b className='font-semibold'>Thewashersuae</b> we are commited to delivering a Deeper Clean with our Furniture and <b className='font-semibold'>Sofa Cleaning Services</b> in Dubai Sharjah Ajman.
                         </p>
                         <p className='mt-2 leading-7'>
-                            TheWasheruae Sofa Cleaning Services provide a healthier Clean for your Furnture.
+                            TheWasheruae <b className='font-semibold'>Sofa Cleaning Services</b> provide a healthier Clean for your Furnture.
                             With our approch, you can remove deep-seated stains, pet hair and dirt from your furniture without using soapy detergents or harsh chemicals.
                             instead we rely on certified cleaning chemicals and products for 99% deeper clean and healthier home.
                         </p>
                         <ol className='mt-2 leading-7 list-decimal pl-5'>
-                            <li>Book Your Sofa Cleaning Services</li>
+                            <li>Book Your <b className='font-semibold'>Sofa Cleaning Services</b></li>
                             <li>Our Expert will come to Your Place </li>
                             <li>They will Apply the most suitable Sofa Cleaning Method</li>
                             <li>Enjoy Your Refreshed Sofa And Healthier Home</li>
@@ -183,8 +183,8 @@ const Services = () => {
                 </div>
             </div>
             <div className='mb-16 lg:mb-20'>
-                <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl mb-2'>Rugs/Mattress Cleaning Services</h2>
-                <p>Keep your favourite rugs in pristine condition with a regular clean from a Thewashersuae Expert.</p>
+                <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl mb-2'>Rugs/Carpet Cleaning Services</h2>
+                <p>Keep your favourite rugs in pristine condition with a regular clean from a <b className='font-semibold'>Thewashersuae</b> Expert.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
@@ -192,10 +192,10 @@ const Services = () => {
                             Households with young children and pets will find their rug needs a clean more often, and as with all kinds of cleaning there are important things to consider, the rug fibres, its age and conditions, these determine the best strategy for a successful clean.
                         </p>
                         <p className='mt-2 sm:mt-3 leading-7'>
-                            Thewashersuae Expert pride themselves on the level of customer service they offer, assessing the situation to then deliver the best results.
+                            <b className='font-semibold'>Thewashersuae</b> Expert pride themselves on the level of customer service they offer, assessing the situation to then deliver the best results.
                         </p>
                         <p className='mt-2 sm:mt-3 leading-7'>
-                            As well as rug cleaning services Thewashersuae also offer protection services. Protection often works out as a cost-effective solution to furniture care, as the application of the correct protective layer will help prevent stains and dirt building up over time.
+                            As well as <b className='font-semibold'>rug cleaning services Thewashersuae</b> also offer protection services. Protection often works out as a cost-effective solution to furniture care, as the application of the correct protective layer will help prevent stains and dirt building up over time.
                         </p>
                     </div>
                     <div className='w-full overflow-hidden'>
@@ -213,21 +213,21 @@ const Services = () => {
             </div>
             <div className='mb-16 lg:mb-20'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl mb-2'>Mattress Cleaning Services</h2>
-                <p>Elevate Your Sleep Experience: Thewashersuae Expert Mattress Cleaning Services for a Fresher, Healthier Bed.</p>
+                <p>Elevate Your Sleep Experience: <b className='font-semibold'>Thewashersuae</b> Expert <b className='font-semibold'>Mattress Cleaning Services</b> for a Fresher, Healthier Bed.</p>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 mt-3 lg:mt-5'>
                     <div className='w-full my-auto'>
                         <p className='leading-7'>
-                            Get a better sleep wth a mattress Professionally cleaned by Thewashersuae Team
+                            Get a better sleep with a mattress Professionally cleaned by <b className='font-semibold'>Thewashersuae</b> Team
                             a good mattress can be significant investment so this means you want it to last as long possible, staying fresh as the day you bought it.
                             since you use your mattress everyday, it can be one of the least clean items in house.
                         </p>
                         <p className='mt-2 sm:mt-3 leading-7'>
                             Dead skin cells, dust and sweat all find their way into the fibers of the mattress and, without being cleand, will stay there.
-                            Thewashersuae believe a clean Mattress is essential part of a happy and comfortable home.
+                            <b className='font-semibold'>Thewashersuae</b> believe a clean Mattress is essential part of a happy and comfortable home.
                         </p>
                         <p className='mt-2 sm:mt-3 leading-7'>
                             Twice a year is the standard recommendation when it comes to how often you should clean your mattress.
-                            Mattress becoming more advanced and expensive it is not alwayes easy to give a mattress an effective clean using normal household equipments and methods For That Thewashersuae is here for help you.
+                            Mattress becoming more advanced and expensive it is not alwayes easy to give a mattress an effective clean using normal household equipments and methods For That <b className='font-semibold'>Thewashersuae</b> is here for help you.
                         </p>
                     </div>
                     <div className='w-full overflow-hidden'>

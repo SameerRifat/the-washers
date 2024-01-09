@@ -93,7 +93,7 @@ const Header = () => {
         },
         {
             image: "/MattressBanner.jpg",
-            image2: "/mattress6.jpg",
+            image2: "/mattress8.jpg",
             // image3: "/mediumScreeenBanner3.jpg",
             title: ["Mattress Cleaning", "Services"],
         },
