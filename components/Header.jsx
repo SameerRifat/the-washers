@@ -36,7 +36,7 @@ const SlideContent = ({ image, image2, title }) => {
             />
             <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-20 pt-[60px] sm:pt-[70px] pb-2 xxs:pb-3 xs:pb-5 lg:pb-[50px]'>
                 <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
-                    <h1 className='font-bold xs:font-bold text-xl xxxs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 sm:gap-2 lg:gap-4 mb-2 sm:mb-3 lg:mb-5 leading-none
+                    <h1 className='font-bold xs:font-bold text-xl xxxs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 sm:gap-2 lg:gap-4 mb-3 lg:mb-5 leading-none
                                     bg-black/5 w-fit p-1 rounded-lg'
                     >
                         {title.map((text, index) => (
