@@ -200,13 +200,13 @@ const Services = () => {
                     </div>
                     <div className='w-full overflow-hidden'>
                         <Image
-                            src='/mediumScreeenBanner2.jpg'
+                            src='/mediumScreeenBanner1.jpg'
                             alt="Rugs cleaning service image"
                             width={350}
                             height={350}
                             quality={95}
                             priority={true}
-                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm'
+                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm border border-gray-50'
                         />
                     </div>
                 </div>
@@ -232,7 +232,7 @@ const Services = () => {
                     </div>
                     <div className='w-full overflow-hidden'>
                         <Image
-                            src='/mattress1.jpg'
+                            src='/mattress9.jpg'
                             alt="Mattress cleaning service image"
                             width={350}
                             height={350}

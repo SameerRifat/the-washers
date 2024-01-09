@@ -93,7 +93,7 @@ const Header = () => {
         },
         {
             image: "/MattressBanner.jpg",
-            image2: "/mattress8.jpg",
+            image2: "/mattress9.jpg",
             // image3: "/mediumScreeenBanner3.jpg",
             title: ["Mattress Cleaning", "Services"],
         },
@@ -113,33 +113,57 @@ const Header = () => {
 
             <div key={forceRerender} className='flex flex-col lg:flex-row bg-gradient-to-r lg:bg-none from-blue-500 to-green-400'>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-blue-500 lg:to-green-400 lg:flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
-                    <div className='text-4xl'>
-                        <UpdateOutlinedIcon className=' text-white' style={isSmallScreen ? {fontSize: '40px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
+                    <div className='w-28 sm:w-32'>
+                        <Image
+                            src='/sofaIcon2.png'
+                            alt="cleaning service icon"
+                            width={60}
+                            height={60}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-24 sm:w-28 h-auto'
+                        />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>7 Days a Week</h3>
-                        <p className='text-white'>Book our services online, available every day for your convenience</p>
+                        <h3 className='text-white font-semibold text-xl'>Sofa Cleaning Services</h3>
+                        <p className='text-white'>Revitalize your space with our expert Sofa Cleaning – Where Comfort Meets Cleanliness!"</p>
                     </div>
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 bg-gradient-to-b from-[#037981] to-[#04aab6] flex-[0.8] max-w-[580px] mx-auto relative'>
-                    <div className='text-4xl'>
-                        <HomeWorkOutlinedIcon className=' text-white' style={isSmallScreen ? {fontSize: '40px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
+                    <div className='w-28 sm:w-32'>
+                        <Image
+                            src='/carpetIcon.png'
+                            alt="cleaning service icon"
+                            width={60}
+                            height={60}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-24 sm:w-28 h-auto'
+                        />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>Our Services Areas</h3>
-                        <p className='text-white'>We provide cleaning services in Dubai, Sharjah, and Ajman</p>
+                        <h3 className='text-white font-semibold text-xl'>Carpet Cleaning Services</h3>
+                        <p className='text-white'>Revitalize Your Space: Unleash the Freshness with Our Expert Carpet & Rug Cleaning Services!</p>
                     </div>
                     <div className='w-full h-1 lg:h-2 absolute bottom-0 left-0 bg-gradient-to-r from-blue-600 to-green-500'>
 
                     </div>
                 </div>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-green-400 lg:to-blue-500 flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
-                    <div className='text-4xl'>
-                        <WhatsAppIcon className=' text-white' style={isSmallScreen ? {fontSize: '40px'} : (isMediumScreen ? {fontSize: '50px'} : {fontSize: '60px'})}/>
+                    <div className='w-28 sm:w-32'>
+                        <Image
+                            src='/mattressIcon6.png'
+                            alt="cleaning service icon"
+                            width={60}
+                            height={60}
+                            quality={95}
+                            priority={true}
+                            className='max-w-full w-24 sm:w-28 h-auto'
+                        />
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <h3 className='text-white font-semibold text-xl'>Get Free Quote</h3>
-                        <p className='text-white'>WhatsApp or call us to get a free quote for our services</p>
+                        <h3 className='text-white font-semibold text-xl'>Mattress Cleaning Services</h3>
+                        <p className='text-white'>Revitalize your sleep sanctuary with our expert Mattress Cleaning – because a clean mattress is a dream come true!</p>
                     </div>
                 </div>
             </div>
