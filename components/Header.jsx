@@ -21,13 +21,14 @@ const SlideContent = ({ image, image2, title }) => {
         setForceRerender(prevState => !prevState);
     }, [isSmallScreen]);
 
+    const titleText = title.join(' ')
 
     return (
         <div key={forceRerender} className='w-full h-[35vh] xxs:h-[40vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[80vh] relative'>
             <Image
                 // src={isSmallScreen ? image2 : image}
                 src={isSmallScreen ? image2 : image}
-                alt="cleaning service banner"
+                alt={titleText}
                 width={1200}
                 height={1000}
                 quality={95}
