@@ -90,16 +90,6 @@ const Services = () => {
         cssEase: "linear",
         // speed: 1000
     };
-    // const settings2 = {
-    //     dots: true,
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 5000,
-    //     cssEase: "linear",
-    //     // speed: 1000
-    // };
     var settings2 = {
         dots: true,
         infinite: true,
@@ -108,8 +98,6 @@ const Services = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        // centerMode: true, // Add centerMode
-        // centerPadding: '60px', // Adjust the padding value as needed
         responsive: [
             {
                 breakpoint: 1200,
