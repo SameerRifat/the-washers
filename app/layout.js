@@ -132,13 +132,13 @@ export const metadata = {
     description: 'Get top-notch cleaning services at TheWashers UAE! Our expert team guarantees spotless and pristine results for your home or business in Dubai, Sharjah, and Ajman. Book your appointment today and enjoy a sparkling clean space!',
     images: [
       {
-        url: "/mediumScreeenBanner4.jpg",
+        url: "/rugsCleaningBanner2.jpg",
         width: 800,
         height: 600,
         alt: "TheWashers UAE"
       },
       {
-        url: "/rugsCleaningBanner2.jpg",
+        url: "/mediumScreeenBanner4.jpg",
         width: 800,
         height: 600,
         alt: "TheWashers UAE"
