@@ -23,20 +23,6 @@ const slides = [
     }
 ];
 
-// const services = [
-//     {
-//         imgSrc: '/fabricSofa.jpg',
-//         title: 'Fabric & Suede Sofa Clean',
-//     },
-//     {
-//         imgSrc: '/leatherSofa1.jpg',
-//         title: 'Leather Sofa Cleaning',
-//     },
-//     {
-//         imgSrc: '/sofaCumBed.jpg',
-//         title: 'Sofa Cum Bed Clean',
-//     },
-// ]
 const services = [
     {
         imgSrc: '/mattress1.jpg',
@@ -127,7 +113,6 @@ const Services = () => {
     };
     return (
         <div className='w-[93%] sm:w-[90%] mx-auto my-16 sm:my-20 max-w-[1600px]'>
-
             <div className='mb-16 lg:mb-20'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl mb-2'>Sofa Cleaning Services</h2>
                 <p>Elevate Your Living Space with <b className='font-semibold'>Thewashersuae</b>, a Professional Cleaning Company Offering Services in Dubai, Sharjah & Ajman.</p>
@@ -165,7 +150,7 @@ const Services = () => {
                             height={350}
                             quality={95}
                             priority={true}
-                            className='max-w-full w-full h-full sm:h-[350px] rounded-lg shadow-sm'
+                            className='max-w-full w-full h-auto max-h-[470px] object-cover rounded-lg shadow-sm'
                         />
                     </div>
                 </div>
@@ -194,7 +179,7 @@ const Services = () => {
                             height={350}
                             quality={95}
                             priority={true}
-                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm border border-gray-50'
+                            className='max-w-full w-full h-auto max-h-[430px] object-cover rounded-lg shadow-sm border border-gray-50'
                         />
                     </div>
                 </div>
@@ -226,7 +211,7 @@ const Services = () => {
                             height={350}
                             quality={95}
                             priority={true}
-                            className='max-w-full w-full h-auto sm:h-[350px] rounded-lg shadow-sm'
+                            className='max-w-full w-full h-auto max-h-[430px] object-cover rounded-lg shadow-sm'
                         />
                     </div>
                 </div>
@@ -242,17 +227,20 @@ const Services = () => {
                                 href={`/services/${encodeURIComponent(slide.title.replace(/\s+/g, '-'))}`}
                                 className='p-3 lg:p-4 my-3 rounded-lg border border-gray-500/10 group hover:scale-[1.03] transition-all cursor-pointer shadow-lg hover:shadow-xl outline-none'
                             >
-                                <Image
-                                    key={slide.title}
-                                    src={slide.imgSrc}
-                                    alt={`${slide.title} Service`}
-                                    width={350}
-                                    height={350}
-                                    quality={95}
-                                    priority={true}
-                                    className='max-w-full w-full h-full sm:h-[300px] rounded-lg'
-                                />
-                                <h2 className='mt-5 text-xl font-bold text-center'>{slide.title} Service</h2>
+                                {/* aspect-square */}
+                                <div className='aspect-square'>
+                                    <Image
+                                        key={slide.title}
+                                        src={slide.imgSrc}
+                                        alt={`${slide.title} Service`}
+                                        width={350}
+                                        height={350}
+                                        quality={95}
+                                        priority={true}
+                                        className='max-w-full w-full h-full !object-cover rounded-lg'
+                                    />
+                                </div>
+                                <h2 className='mt-5 mb-2 text-xl font-bold text-center'>{slide.title} Service</h2>
 
                                 <style jsx>{`
                                         .group:hover {

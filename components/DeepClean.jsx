@@ -28,7 +28,7 @@ const DeepClean = () => {
                         height={350}
                         quality={95}
                         priority={true}
-                        className='max-w-full w-full h-full sm:h-[350px] rounded-lg'
+                        className='max-w-full w-full h-auto max-h-[430px] object-cover rounded-lg'
                     />
                 </div>
             </div>

@@ -24,19 +24,18 @@ const SlideContent = ({ image, image2, title }) => {
     const titleText = title.join(' ')
 
     return (
-        <div key={forceRerender} className='w-full h-[35vh] xxs:h-[40vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[80vh] relative'>
+        <div key={forceRerender} className='aspect-[16/9] min-h-[40vh] max-h-[80vh] 2xl:max-h-[65vh] w-full relative'>
             <Image
-                // src={isSmallScreen ? image2 : image}
                 src={isSmallScreen ? image2 : image}
                 alt={titleText}
                 width={1200}
                 height={1000}
                 quality={95}
                 priority={true}
-                className='max-w-full w-full h-full'
+                className='max-w-full w-full h-full object-cover'
             />
             <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-20 pt-[60px] sm:pt-[70px] pb-2 xxs:pb-3 xs:pb-5 lg:pb-[50px]'>
-                <div className='w-[90%] mx-auto h-full flex flex-col justify-end'>
+                <div className='shared_container h-full flex flex-col justify-end'>
                     <h1 className='font-bold xs:font-bold text-xl xxxs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white flex flex-col gap-0.5 xxs:gap-1 sm:gap-2 lg:gap-4 mb-3 lg:mb-5 leading-none
                                     bg-black/5 w-fit p-1 rounded-lg'
                     >
@@ -83,19 +82,16 @@ const Header = () => {
         {
             image: "/sofaCleaningBanner.jpg",
             image2: "/mediumScreeenBanner4.jpg",
-            // image3: "/mediumScreeenBanner1.jpg",
             title: ["Sofa Cleaning", "Services"],
         },
         {
             image: "/rugsCleaningBanner2.jpg",
             image2: "/rugs5.jpg",
-            // image3: "/mediumScreeenBanner2.jpg",
             title: ["Carpet/Rugs Cleaning", "Services"],
         },
         {
             image: "/MattressBanner.jpg",
             image2: "/mattress9.jpg",
-            // image3: "/mediumScreeenBanner3.jpg",
             title: ["Mattress Cleaning", "Services"],
         },
     ];
@@ -112,7 +108,7 @@ const Header = () => {
                 </div>
             </header>
 
-            <div key={forceRerender} className='flex flex-col lg:flex-row bg-gradient-to-r lg:bg-none from-blue-500 to-green-400'>
+            <div key={forceRerender} className='w-full max-w-[1600px] mx-auto flex flex-col lg:flex-row bg-gradient-to-r lg:bg-none from-blue-500 to-green-400'>
                 <div className='flex gap-3 items-center lg:justify-center px-5 py-10 xs:p-10 lg:bg-gradient-to-r lg:from-blue-500 lg:to-green-400 lg:flex-1 max-w-[580px] xs:w-[580px] xs:mx-auto'>
                     <div className='w-28 sm:w-32'>
                         <Image

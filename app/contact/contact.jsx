@@ -4,10 +4,8 @@ import React, { useRef } from 'react'
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import ChatIcon from '@mui/icons-material/Chat';
 import { useMediaQuery } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import SendIcon from '@mui/icons-material/Send';
 import SectionHeading from '@/components/SectionHeading';
 import SendBtn from '@/components/SendBtn';
 import { sendEmail } from '@/actions/sendEmail';
@@ -42,32 +40,15 @@ const Contact = () => {
 
     return (
         <div className=''>
-            <div className='w-full h-[45vh] xs:h-[50vh] xl:h-[75vh] bg-[url(/3.png)] bg-no-repeat pt-[70px] overflow-hidden'>
-                {/* <div className= absolute top-[60%] left-[50%] flex items-center gap-5 '>
-                    <span className='border-2 border-white p-3 rounded-full '>
-                        <LocalPhoneOutlinedIcon className='text-white font-extrabold' fontSize='large' />
-                    </span>
-                    <span className='border-2 border-white p-3 rounded-full'>
-                        <EmailOutlinedIcon className='text-white font-extrabold' fontSize='large' />
-                    </span>
-                    <span className='border-2 border-white p-3 rounded-full'>
-                        <FmdGoodIcon className='text-white font-extrabold' fontSize='large' />
-                    </span>
-                    <span className='border-2 border-white p-3 rounded-full'>
-                        <ChatIcon className='text-white font-extrabold' fontSize='large' />
-                    </span>
-                </div> */}
-                <div className='flex justify-between xs:grid xs:grid-cols-2 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
-                    <div className='flex justify-start lg:justify-center items-center'>
+            <div className='w-full h-[45vh] xs:h-[50vh] xl:h-[70vh] bg-[url(/3.png)] bg-cover bg-no-repeat pt-[70px] overflow-hidden'>
+                <div className='flex justify-between xs:grid xs:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-5 sm:gap-0 lg:gap-10 w-[90%] max-w-[1600px] mx-auto h-full'>
+                    <div className='hidden md:flex justify-start lg:justify-center items-center'>
                         <div className='w-[150px] xs:w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-fit lg:h-[175px]'>
                             <video
                                 width="100%"
                                 height="100%"
-                                // controls
                                 autoPlay
                                 loop={true}
-                                // poster="/echoCartPoster.png"
-                                // style={{ maxWidth: '100%', width: '100%', height: 'auto', display: 'block', margin: 'auto' }}
                                 className='rounded-[1rem] sm:rounded-[2.7rem] lg:rounded-[3rem] mr-auto'
                             >
                                 <source src="/contact4.mp4" type="video/mp4" />
@@ -75,28 +56,19 @@ const Contact = () => {
                             </video>
                         </div>
                     </div>
-                    <div className='flex-1 flex justify-end lg:justify-center items-center relative overflow-hidden'>
-                        <Image
-                            src='/contact-us1.png'
-                            alt="banner"
-                            width={250}
-                            height={500}
-                            quality={95}
-                            priority={true}
-                            className='max-w-full sm:mt-auto w-[230px] sm:w-[270px] md:w-[280px] xxl:w-[60%] h-fit ml-auto lg:ml-0'
-                        />
-                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[50px] left-[80px] xs:left-[100px] sm:left-[70px] md:left-[120px]'>
-                            <LocalPhoneOutlinedIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
-                        </span>
-                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[120px] left-[20px] xs:left-[40px] sm:left-[20px] md:left-[50px]'>
-                            <EmailOutlinedIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
-                        </span>
-                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[200px] left-[0px] xs:left-[5px] sm:left-0 md:left-[10px]'>
-                            <ChatIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
-                        </span>
-                        <span className='border-2 border-white p-1 sm:p-2.5 lg:p-3 w-10 h-10 sm:w-11 sm:h-11 md:w-14 md:h-14 hidden xs:flex justify-center items-center rounded-full absolute top-[280px] left-[10px] xs:left-[20px] sm:left-[10px] lg:left-[60px]'>
-                            <FmdGoodIcon className='text-white font-extrabold' fontSize={mdUp ? 'large' : xsUp ? 'medium' : 'small'} />
-                        </span>
+                    <div className='flex-1 flex justify-center items-end overflow-hidden 2xl:col-span-2'>
+                        {/* aspect ratio */}
+                        <div className='aspect-[900/900] h-[90%]'>
+                            <Image
+                                src='/contact-new.png'
+                                alt="banner"
+                                width={900}
+                                height={900}
+                                quality={95}
+                                priority={true}
+                                className='!w-full !h-full object-cover !mt-auto'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,7 +99,6 @@ const Contact = () => {
                             <div className='inline-block p-1  bg-gradient-to-r from-blue-600 to-green-500 rounded-full'>
                                 <span className='border-2 border-white p-1 rounded-full w-14 h-14 flex justify-center items-center'>
                                     <FmdGoodIcon
-                                        // className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500'
                                         className='text-white'
                                         fontSize='large'
                                     />
@@ -158,7 +129,6 @@ const Contact = () => {
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque temporibus nesciunt enim libero praesentium illum? */}
             <div className='w-[90%] mx-auto max-w-[1600px] flex flex-col'>
                 <div className='flex justify-center'>
                     <div className='py-6 px-4 sm:p-6 w-[40rem] max-w-3xl mx-auto bg-gray-50 shadow-lg rounded-md mb-10'>
@@ -234,13 +204,6 @@ const Contact = () => {
                                 ></textarea>
                             </div>
                             <SendBtn />
-                            {/* <button
-                                type="submit"
-                                className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
-                            >
-                                Submit{" "}
-                                <SendIcon className="text-base opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                            </button> */}
                         </form>
                     </div>
                 </div>

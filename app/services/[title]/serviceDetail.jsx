@@ -3,7 +3,6 @@ import SectionHeading from '@/components/SectionHeading';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-// pages/services/[title].js
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
@@ -444,18 +443,16 @@ const ServiceDetail = ({ params }) => {
             <Head>
                 <title>{`${service.title} Service - TheWashers UAE`}</title>
                 <meta name="description" content="Professional cleaning service for your home or office. Book now for quality cleaning solutions." />
-                {/* Add other meta tags as needed */}
             </Head>
-            <div key={forceRerender} className='w-full h-[20vh] xxxs:h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[45vh] xl:h-[50vh] relative'>
+            <div key={forceRerender} className='w-full aspect-[3000/1000] min-h-[40vh] max-h-[60vh] 2xl:max-h-[55vh] relative'>
                 <Image
-                    // src={service.banner1}
                     src={isSmallScreen ? service.banner2 : service.banner1}
                     alt={`${service.title} service image`}
                     width={1200}
                     height={1000}
                     quality={95}
                     priority={true}
-                    className='max-w-full w-full h-full'
+                    className='max-w-full w-full h-full object-cover'
                 />
                 <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-20 pt-[60px] sm:pt-[70px]'>
                     <div className='w-full h-full flex flex-col justify-center items-center'>
@@ -476,7 +473,6 @@ const ServiceDetail = ({ params }) => {
             <div className='w-[90%] max-w-[1600px] mx-auto my-14'>
                 <div className='w-fit relative mb-2'>
                     <h2 className='font-bold md:font-extrabold text-2xl sm:text-3xl text-start'>{service.title} Service</h2>
-                    {/* <div className='absolute left-1/2 -translate-x-1/2  w-36 h-1 lg:h-1 bg-gradient-to-r from-blue-600 to-green-500 mb-8 mt-1 rounded-sm'></div> */}
                 </div>
                 <p>
                     {service.subtitle}
@@ -492,7 +488,7 @@ const ServiceDetail = ({ params }) => {
                                 Book Service Now
                             </Link>
                         </div>
-                        <div className=''>
+                        <div className='w-full overflow-hidden'>
                             <Image
                                 src={service.serviceDetailImg}
                                 alt={`${service.title} service image`}
@@ -500,7 +496,7 @@ const ServiceDetail = ({ params }) => {
                                 height={350}
                                 quality={95}
                                 priority={true}
-                                className='max-w-full w-full h-full sm:h-[350px] rounded-lg shadow-lg'
+                                className='max-w-full w-full h-auto max-h-[430px] object-cover rounded-lg shadow-lg'
                             />
                         </div>
                     </div>
@@ -511,111 +507,3 @@ const ServiceDetail = ({ params }) => {
 };
 
 export default ServiceDetail;
-
-
-// const services = [
-//     {
-//         banner1: '/MattressBanner.jpg',
-//         title: 'Mattress Cleaning',
-//         desc: `
-//             Ensure a restful night's sleep with our specialized Mattress Cleaning service.
-//             Beyond the visible surface, mattresses can harbor dust mites, allergens, and even mold.
-//             Our thorough cleaning methods aim to not only refresh the mattress but also provide a healthier sleeping environment.
-
-//             Service Highlights:
-//             - Steam Cleaning: Utilizing high-temperature steam to eliminate bacteria and allergens.
-//             - Non-Toxic Cleaning Agents: Employing eco-friendly solutions safe for you and the environment.
-//             - Stain Removal Techniques: Targeting common mattress stains for a cleaner appearance.
-
-//             Additional Benefits:
-//             - Allergen Reduction: Ideal for allergy sufferers, creating a cleaner and healthier sleep space.
-//             - Extended Mattress Lifespan: Regular cleaning promotes durability, preserving your investment.
-//         `,
-//     },
-//     {
-//         banner1: '/carpetCleaningBanner.jpg',
-//         title: 'Carpet Cleaning',
-//         desc: 'Carpet Cleaning description'
-//     },
-//     {
-//         banner1: '/rugsCleaningBanner.jpg',
-//         title: 'Rugs Cleaning',
-//         desc: 'Rugs Cleaning description'
-//     },
-//     {
-//         banner1: '/curtainsCleaning2.jpg',
-//         title: 'Curtains Cleaning',
-//         desc: 'Curtains Cleaning description'
-//     },
-//     {
-//         banner1: '/chairCleaingBanner.jpg',
-//         title: 'Chairs Cleaning',
-//         desc: 'Chairs Cleaning description'
-//     },
-//     {
-//         banner1: '/glassCleaning5.jpg',
-//         title: 'Glass Cleaning',
-//         desc: 'Glass Cleaning description'
-//     },
-//     {
-//         banner1: '/deepCleaningBanner.jpg',
-//         title: 'Deep Cleaning',
-//         desc: 'Deep Cleaning description'
-//     },
-//     {
-//         banner1: '/sofaCleaningBanner.jpg',
-//         title: 'Sofa Cleaning',
-//         desc: 'Sofa Cleaning description'
-//     },
-//     {
-//         banner1: '/homeMaidBanner3.jpg',
-//         title: 'House Maid Service',
-//         desc: 'House Maid Service description'
-//     },
-//     {
-//         banner1: '/houseCleaningBanner.jpg',
-//         title: 'House Cleaning Service',
-//         desc: 'House Cleaning Service Description'
-//     },
-// ]
-
-// const ServiceDetail = ({ params }) => {
-//     const formattedTitle = params.title ? params.title.replace(/-/g, ' ') : '';
-
-//     const service = services.find((s) => s.title === formattedTitle);
-
-//     return (
-//         <>
-//             <div className='w-full h-[10vh] xxxs:h-[15vh] xxs:h-[20vh] xs:h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[45vh] xl:h-[50vh] relative'>
-//                 <Image
-//                     src={service.banner1}
-//                     alt="banner"
-//                     width={1200}
-//                     height={1000}
-//                     quality={95}
-//                     priority={true}
-//                     className='max-w-full w-full h-full'
-//                 />
-//                 <div className='w-full h-full absolute top-0 left-0 flex items-end bg-black bg-opacity-10 pt-[60px] sm:pt-[70px]'>
-//                     <div className='w-full h-full flex flex-col justify-center items-center'>
-//                         <h1 className='font-semibold xxxs:font-bold xs:font-extrabold text-xl xxxs:text-2xl xs:text-4xl sm:text-5xl text-white flex flex-col gap-0.5 xxs:gap-1 xs:gap-3 sm:gap-4 mb-1 sm:mb-3 md:mb-5'>
-//                             {service.title}
-//                         </h1>
-//                         <Link
-//                             href='/contact'
-//                             className='primaryBtn'
-//                             style={{}}
-//                         >
-//                             Request a Call Back
-//                         </Link>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className='my-10 text-center'>
-//                 <SectionHeading>{service.title}</SectionHeading>
-//             </div>
-//         </>
-//     );
-// };
-
-// export default ServiceDetail;

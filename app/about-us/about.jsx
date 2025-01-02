@@ -19,17 +19,15 @@ const About = () => {
 
     return (
         <>
-            <div key={forceRerender} className='w-full h-[30vh] xxxs:h-[35vh] sm:h-[40vh] lg:h-[45vh] xl:h-[55vh] relative'>
+            <div key={forceRerender} className='w-full aspect-[3000/1000] min-h-[40vh] max-h-[60vh] 2xl:max-h-[55vh] relative'>
                 <Image
-                    // src={service.banner1}
                     src={isSmallScreen ? '/aboutUsBanner3.jpg' : '/aboutUsBanner1.jpg'}
-                    // src={isSmallScreen ? '/aboutUsBanner3.jpg' : (isMediumScreen ? '/aboutUsBanner2.jpg' : '/aboutUsBanner1.jpg')}
                     alt="banner"
                     width={1200}
                     height={1000}
                     quality={95}
                     priority={true}
-                    className='max-w-full w-full h-full'
+                    className='max-w-full w-full h-full object-cover'
                 />
                 <div className=' absolute left-0 top-0 h-full w-full flex justify-center items-center'>
                     <div className=' w-fit mx-auto flex flex-col justify-center gap-1 md:gap-2 text-white mt-[70px] p-3 bg-black/20 rounded-md'>
@@ -133,7 +131,7 @@ const About = () => {
                                 height={350}
                                 quality={95}
                                 priority={true}
-                                className='max-w-full w-full h-auto rounded-lg shadow-lg'
+                                className='max-w-full w-full h-auto max-h-[430px] object-cover rounded-lg shadow-lg'
                             />
                         </div>
                     </div>
