@@ -33,7 +33,7 @@ const CleaningMethods = () => {
 
     return (
         <section className='bg-gradient-to-r from-blue-300 to-green-300 mb-20 py-14'>
-            <div className='w-[90%] mx-auto'>
+            <div className='shared_container'>
                 <h2 className='font-bold sm:font-extrabold text-2xl sm:text-3xl'>
                     <span className='font-semibold'>Professional {" "}</span>
                     Sofa Cleaning Methods

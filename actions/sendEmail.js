@@ -15,12 +15,6 @@ export const sendEmail = async (formData) => {
     const senderEmail = formData.get("senderEmail");
     const message = formData.get("message");
 
-    // console.log('senderName: ', senderName)
-    // console.log('senderPhone: ', senderPhone)
-    // console.log('subject: ', subject)
-    // console.log('senderEmail: ', senderEmail)
-    // console.log('message: ', message)
-
     if (!validateString(senderEmail, 500)) {
         return {
             error: "Invalid sender Email",
@@ -62,10 +56,7 @@ export const sendEmail = async (formData) => {
     try {
         data = await resend.emails.send({
             from: "TheWashers <info@thewashersuae.com>",
-            // from: "TheWashers <onboarding@resend.dev>",
             to: "info@thewashersuae.com",
-            // to: "sameerrifat96@gmail.com",
-            // yousafejaz40@gmail.com
             subject: "Message from contact form",
             reply_to: senderEmail,
             html: html,

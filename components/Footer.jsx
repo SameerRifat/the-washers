@@ -71,9 +71,9 @@ const navigation = [
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className='bg-[url(/3.png)] '>
+        <footer className='bg-[url(/3.png)] bg-cover bg-center bg-no-repeat'>
             <div className='pt-10 bg-blue-950/40'>
-                <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 text-white'>
+                <div className='shared_container grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-0 text-white'>
                     <div className=' order-3 sm:order-1'>
                         <h2 className='font-bold text-xl sm:text-2xl text-white mb-2'>Information</h2>
                         <div className='flex gap-2 pb-3 text-center'>
